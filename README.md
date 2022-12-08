@@ -1,8 +1,8 @@
 # DashUiLib
 
-Components library for build mobiles aplications with React and React Native builded with styled-system
+Components library for build mobiles aplications with React and React Native builded with tailwind css
 
-![Dash UI](https://github.com/DashReact/DashUI/blob/main/media/icon.png?raw=true)
+![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/icon.png?raw=true)
 
 ## Libraries
 
