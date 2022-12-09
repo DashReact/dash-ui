@@ -1,6 +1,6 @@
 # DashUiLib
 
-Components library for build mobiles aplications with React and React Native builded with tailwind css
+Components library for build mobiles aplications with React and React Native builded with tailwind
 
 ![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/icon.png?raw=true)
 
@@ -12,6 +12,12 @@ This section contains all the comands related to libraries manipulation in the w
 
 ```bash
 nx g @nrwl/react:library {lib-name} --publishable --importPath="@dash-ui-lib/{lib-name}" --tags="components,ts,dash-ui,react,react-native"
+```
+
+Adding tailwind to library
+
+```bash
+nx g setup-tailwind --project=my-app
 ```
 
 ##### Creating Components
