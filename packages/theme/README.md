@@ -1,4 +1,4 @@
-# @dash-ui-lib/theme
+# theme
 
 This library was generated with [Nx](https://nx.dev).
 

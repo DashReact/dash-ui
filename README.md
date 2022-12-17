@@ -1,6 +1,6 @@
 # DashUiLib
 
-Components library for build mobiles aplications with React and React Native builded with tailwind
+Components library for build mobiles aplications with React and React Native builded with styled components
 
 ![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/icon.png?raw=true)
 

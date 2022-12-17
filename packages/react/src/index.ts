@@ -1,2 +1,2 @@
-export * from '@dash-ui-lib/theme'
-export * from '@dash-ui-lib/button'
+export * from './lib/dash-provider/dash-provider';
+export * from '@dash-ui-lib/theme';
