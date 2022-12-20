@@ -1,12 +1,13 @@
+import { ElementProps } from "./interfaces";
 import { addPx } from "./utils";
 
 export interface PositionProps {
     position?: string;
-    top?: string | number;
-    right?: string | number;
-    bottom?: string | number;
-    left?: string | number;
-    zIndex?: string | number;
+    top?: ElementProps;
+    right?: ElementProps;
+    bottom?: ElementProps;
+    left?: ElementProps;
+    zIndex?: ElementProps;
 }
 
 export const position = (props: PositionProps): string => {

@@ -1,20 +1,21 @@
 import { addPx } from "./utils";
+import { ElementProps } from "./interfaces";
+
 
 export interface PaddingProps {
-  p?: string | number;
-  pt?: string | number;
-  pr?: string | number;
-  pb?: string | number;
-  pl?: string | number;
-  px?: string | number;
-  py?: string | number;
+  p?: ElementProps;
+  pt?: ElementProps;
+  pr?: ElementProps;
+  pb?: ElementProps;
+  pl?: ElementProps;
+  px?: ElementProps;
+  py?: ElementProps;
 }
 
 
 export const padding = (props: PaddingProps): string => {
   const { p, pt, pr, pb, pl, px, py } = addPx(props);
 
-  // Check if the values exist and return the correct css
   return `
   ${p ? `padding: ${p};` : ''}
   ${pt ? `padding-top: ${pt};` : ''}
@@ -24,4 +25,5 @@ export const padding = (props: PaddingProps): string => {
   ${px ? `padding-right: ${px}; padding-left: ${px};` : ''}
   ${py ? `padding-top: ${py}; padding-bottom: ${py};` : ''}
   `;
+
 };

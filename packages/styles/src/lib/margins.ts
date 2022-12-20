@@ -1,13 +1,14 @@
+import { ElementProps } from "./interfaces";
 import { addPx } from "./utils";
 
 export interface MarginProps {
-    m?: string | number;
-    mt?: string | number;
-    mr?: string | number;
-    mb?: string | number;
-    ml?: string | number;
-    mx?: string | number;
-    my?: string | number;
+    m?: ElementProps;
+    mt?: ElementProps;
+    mr?: ElementProps;
+    mb?: ElementProps;
+    ml?: ElementProps;
+    mx?: ElementProps;
+    my?: ElementProps;
 }
 
 

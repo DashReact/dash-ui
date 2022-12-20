@@ -1,23 +1,24 @@
+import { ElementProps } from "./interfaces";
 import { addPx } from "./utils";
 
 
 export interface TransformProps {
-    transform?: string | number;
-    rotate?: string | number;
-    rotateX?: string | number;
-    rotateY?: string | number;
-    rotateZ?: string | number;
-    scale?: string | number;
-    scaleX?: string | number;
-    scaleY?: string | number;
-    scaleZ?: string | number;
-    skew?: string | number;
-    skewX?: string | number;
-    skewY?: string | number;
-    translate?: string | number;
-    translateX?: string | number;
-    translateY?: string | number;
-    translateZ?: string | number;
+    transform?: ElementProps;
+    rotate?: ElementProps;
+    rotateX?: ElementProps;
+    rotateY?: ElementProps;
+    rotateZ?: ElementProps;
+    scale?: ElementProps;
+    scaleX?: ElementProps;
+    scaleY?: ElementProps;
+    scaleZ?: ElementProps;
+    skew?: ElementProps;
+    skewX?: ElementProps;
+    skewY?: ElementProps;
+    translate?: ElementProps;
+    translateX?: ElementProps;
+    translateY?: ElementProps;
+    translateZ?: ElementProps;
 }
 
 export const transforms = (props: TransformProps): string => {

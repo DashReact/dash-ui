@@ -1,19 +1,20 @@
+import { ElementProps } from "./interfaces";
 import { addPx } from "./utils";
 
 
 export interface LayoutProps {
-    display?: string | number
+    display?: ElementProps
     center?: boolean;
-    w?: string | number;
-    h?: string | number;
-    minWidth?: string | number;
-    minHeight?: string | number;
-    maxWidth?: string | number;
-    maxHeight?: string | number;
-    overflow?: string | number;
-    overflowX?: string | number;
-    overflowY?: string | number;
-    verticalAlign?: string | number;
+    w?: ElementProps;
+    h?: ElementProps;
+    minWidth?: ElementProps;
+    minHeight?: ElementProps;
+    maxWidth?: ElementProps;
+    maxHeight?: ElementProps;
+    overflow?: ElementProps;
+    overflowX?: ElementProps;
+    overflowY?: ElementProps;
+    verticalAlign?: ElementProps;
 }
 
 export const layout = (props: LayoutProps): string => {

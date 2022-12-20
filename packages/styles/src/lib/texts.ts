@@ -1,17 +1,18 @@
+import { ElementProps } from "./interfaces";
 import { addPx } from "./utils";
 
 export interface TextsProps {
-    textColor?: string | number;
-    textAlign?: string | number;
-    textTransform?: string | number;
-    textShadow?: string | number;
-    textOverflow?: string | number;
-    textDecoration?: string | number;
-    textIndent?: string | number;
-    textJustify?: string | number;
-    textEmphasis?: string | number;
-    textUnderlinePosition?: string | number;
-    textOrientation?: string | number;
+    textColor?: ElementProps;
+    textAlign?: ElementProps;
+    textTransform?: ElementProps;
+    textShadow?: ElementProps;
+    textOverflow?: ElementProps;
+    textDecoration?: ElementProps;
+    textIndent?: ElementProps;
+    textJustify?: ElementProps;
+    textEmphasis?: ElementProps;
+    textUnderlinePosition?: ElementProps;
+    textOrientation?: ElementProps;
 }
 
 export const texts = (props: TextsProps): string => {

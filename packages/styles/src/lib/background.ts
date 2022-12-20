@@ -1,12 +1,13 @@
+import { ElementProps } from "./interfaces";
 import { addPx } from "./utils";
 
 export interface BackgroundProps {
-    bg?: string | number;
-    bgImage?: string | number;
-    bgSize?: string | number;
-    bgPosition?: string | number;
-    bgRepeat?: string | number;
-    bgAttachment?: string | number;
+    bg?: ElementProps;
+    bgImage?: ElementProps;
+    bgSize?: ElementProps;
+    bgPosition?: ElementProps;
+    bgRepeat?: ElementProps;
+    bgAttachment?: ElementProps;
 }
 
 export const background = (props: BackgroundProps): string => {

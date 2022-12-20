@@ -1,16 +1,17 @@
 import { addPx } from "./utils";
+import { ElementProps } from "./interfaces";
 
 
 export interface AnimationProps {
-    animation?: string | number;
-    animationDelay?: string | number;
-    animationDirection?: string | number;
-    animationDuration?: string | number;
-    animationFillMode?: string | number;
-    animationIterationCount?: string | number;
-    animationName?: string | number;
-    animationPlayState?: string | number;
-    animationTimingFunction?: string | number;
+    animation?: ElementProps;
+    animationDelay?: ElementProps;
+    animationDirection?: ElementProps;
+    animationDuration?: ElementProps;
+    animationFillMode?: ElementProps;
+    animationIterationCount?: ElementProps;
+    animationName?: ElementProps;
+    animationPlayState?: ElementProps;
+    animationTimingFunction?: ElementProps;
 }
 
 export const animations = (props: AnimationProps): string => {

@@ -1,15 +1,16 @@
+import { ElementProps } from "./interfaces";
 import { addPx } from "./utils";
 
 export interface BordersProps {
-    b?: string | number;
-    bt?: string | number;
-    br?: string | number;
-    bb?: string | number;
-    bl?: string | number;
-    round?: string | number;
-    borderStyle?: string | number;
-    bc?: string | number;
-    bw?: string | number;
+    b?: ElementProps;
+    bt?: ElementProps;
+    br?: ElementProps;
+    bb?: ElementProps;
+    bl?: ElementProps;
+    round?: ElementProps;
+    borderStyle?: ElementProps;
+    bc?: ElementProps;
+    bw?: ElementProps;
 }
 
 export const borders = (props: BordersProps): string => {

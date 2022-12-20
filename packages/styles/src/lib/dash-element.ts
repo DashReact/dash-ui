@@ -15,6 +15,8 @@ import { ShadowsProps } from './shadows';
 import { TextsProps } from './texts';
 import { TransformProps } from './transforms';
 import { TransitionProps } from './transitions';
+import { CursorProps } from './cursors';
+import { PseudoClassesProps } from './pseudo-classes';
 
 
 // Function for all elements
@@ -34,8 +36,9 @@ import { shadows } from './shadows';
 import { texts } from './texts';
 import { transforms } from './transforms';
 import { transitions } from './transitions';
+import { cursor } from './cursors';
 
-
+import { pseudoClasses } from './pseudo-classes';
 
 export interface DashElementProps extends
     MarginProps, PaddingProps, BreackPointsProps,
@@ -51,11 +54,10 @@ export interface DashElementProps extends
     ShadowsProps,
     TextsProps,
     TransformProps,
-    TransitionProps { }
+    TransitionProps, PseudoClassesProps, CursorProps { }
 
 
 export const dashStyles = (props: DashElementProps): string => {
-
 
     return `
     ${animations(props)}
@@ -74,5 +76,7 @@ export const dashStyles = (props: DashElementProps): string => {
     ${texts(props)}
     ${transforms(props)}
     ${transitions(props)}
+    ${pseudoClasses(props)}
+    ${cursor(props)}
     `;
 }

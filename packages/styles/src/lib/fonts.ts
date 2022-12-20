@@ -1,28 +1,29 @@
 import { addPx } from "./utils";
+import { ElementProps } from "./interfaces";
 
 
 export interface FontProps {
-    fontFamily?: string | number;
-    fontSize?: string | number | number;
-    fontWeight?: string | number | number;
-    lineHeight?: string | number | number;
-    letterSpacing?: string | number | number;
-    textAlign?: string | number;
-    fontStyle?: string | number;
-    textTransform?: string | number;
-    textDecoration?: string | number;
-    textOverflow?: string | number;
-    whiteSpace?: string | number;
-    wordBreak?: string | number;
-    wordWrap?: string | number;
-    overflowWrap?: string | number;
-    textShadow?: string | number;
-    textRendering?: string | number;
-    fontVariant?: string | number;
-    fontFeatureSettings?: string | number;
-    fontKerning?: string | number;
-    fontOpticalSizing?: string | number;
-    fontSmoothing?: string | number;
+    fontFamily?: ElementProps;
+    fontFeatureSettings?: ElementProps;
+    fontKerning?: ElementProps;
+    fontOpticalSizing?: ElementProps;
+    fontSize?: ElementProps;
+    fontSmoothing?: ElementProps;
+    fontStyle?: ElementProps;
+    fontVariant?: ElementProps;
+    fontWeight?: ElementProps;
+    letterSpacing?: ElementProps;
+    lineHeight?: ElementProps;
+    overflowWrap?: ElementProps;
+    textAlign?: ElementProps;
+    textDecoration?: ElementProps;
+    textOverflow?: ElementProps;
+    textRendering?: ElementProps;
+    textShadow?: ElementProps;
+    textTransform?: ElementProps;
+    whiteSpace?: ElementProps;
+    wordBreak?: ElementProps;
+    wordWrap?: ElementProps;
 }
 
 export const font = (props: FontProps): string => {

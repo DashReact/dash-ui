@@ -1,24 +1,25 @@
+import { ElementProps } from "./interfaces";
 import { addPx } from "./utils";
 
 export interface GridProps {
-    grid?: string | number;
-    gridArea?: string | number;
-    gridAutoColumns?: string | number;
-    gridAutoFlow?: string | number;
-    gridAutoRows?: string | number;
-    gridColumn?: string | number;
-    gridColumnEnd?: string | number;
-    gridColumnGap?: string | number;
-    gridColumnStart?: string | number;
-    gridGap?: string | number;
-    gridRow?: string | number;
-    gridRowEnd?: string | number;
-    gridRowGap?: string | number;
-    gridRowStart?: string | number;
-    gridTemplate?: string | number;
-    gridTemplateAreas?: string | number;
-    gridTemplateColumns?: string | number;
-    gridTemplateRows?: string | number;
+    grid?: ElementProps;
+    gridArea?: ElementProps;
+    gridAutoColumns?: ElementProps;
+    gridAutoFlow?: ElementProps;
+    gridAutoRows?: ElementProps;
+    gridColumn?: ElementProps;
+    gridColumnEnd?: ElementProps;
+    gridColumnGap?: ElementProps;
+    gridColumnStart?: ElementProps;
+    gridGap?: ElementProps;
+    gridRow?: ElementProps;
+    gridRowEnd?: ElementProps;
+    gridRowGap?: ElementProps;
+    gridRowStart?: ElementProps;
+    gridTemplate?: ElementProps;
+    gridTemplateAreas?: ElementProps;
+    gridTemplateColumns?: ElementProps;
+    gridTemplateRows?: ElementProps;
 }
 
 export const grid = (props: GridProps): string => {

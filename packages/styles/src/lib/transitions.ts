@@ -1,11 +1,12 @@
 import { addPx } from "./utils";
+import { ElementProps } from "./interfaces";
 
 export interface TransitionProps {
-    transition?: string | number;
-    transitionDelay?: string | number;
-    transitionDuration?: string | number;
-    transitionProperty?: string | number;
-    transitionTimingFunction?: string | number;
+    transition?: ElementProps;
+    transitionDelay?: ElementProps;
+    transitionDuration?: ElementProps;
+    transitionProperty?: ElementProps;
+    transitionTimingFunction?: ElementProps;
 }
 
 export const transitions = (props: TransitionProps): string => {

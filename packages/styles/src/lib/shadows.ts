@@ -1,9 +1,10 @@
+import { ElementProps } from "./interfaces";
 import { addPx } from "./utils";
 
 
 export interface ShadowsProps {
-    textShadow?: string | number;
-    boxShadow?: string | number;
+    textShadow?: ElementProps;
+    boxShadow?: ElementProps;
 }
 
 export const shadows = (props: ShadowsProps): string => {

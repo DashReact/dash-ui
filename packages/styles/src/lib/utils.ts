@@ -7,7 +7,10 @@ export const addPx = (props: any): any => {
         if (typeof value === 'number') {
             pxProps[key] = `${value}px`;
 
-        } else
+        } else if (typeof value === 'function') {
+            pxProps[key] = value(props)
+        }
+        else
             pxProps[key] = value;
     });
     return pxProps;

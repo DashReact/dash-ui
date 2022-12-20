@@ -1,9 +1,10 @@
+import { ElementProps } from "./interfaces";
 import { addPx } from "./utils";
 
 
 export interface ColorsProps {
-    color?: string | number;
-    borderColor?: string | number;
+    color?: ElementProps;
+    borderColor?: ElementProps;
 }
 
 export const colors = (props: ColorsProps): string => {

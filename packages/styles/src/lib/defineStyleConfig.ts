@@ -17,20 +17,21 @@ export const defineStyleConfig = (props: DefineStyleConfigProps) => {
 
     const StyledDashElement = styled[type]`
         ${dashStyles}
-        ${dashStyles(baseStyle)}
+        ${(props: any) => dashStyles({ ...baseStyle, theme: props.theme })}
         // get the variant styles
-        ${props => {
+        ${(props: any) => {
             const variant = props.variant;
             if (variant && variants[variant]) {
-                return dashStyles(variants[variant]);
+
+                return dashStyles({ ...variants[variant], theme: props.theme });
             }
             return '';
         }}
         // get the size styles
-        ${props => {
+        ${(props: any) => {
             const size = props.size;
             if (size && sizes[size]) {
-                return dashStyles(sizes[size]);
+                return dashStyles({ ...sizes[size], theme: props.theme });
             }
             return '';
         }}

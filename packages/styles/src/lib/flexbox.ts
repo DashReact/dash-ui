@@ -1,17 +1,18 @@
+import { ElementProps } from "./interfaces";
 import { addPx } from "./utils";
 
 export interface FlexboxProps {
-    flex?: string | number;
-    flexDirection?: string | number;
-    flexWrap?: string | number;
-    justifyContent?: string | number;
-    alignItems?: string | number;
-    alignContent?: string | number;
-    order?: string | number;
-    flexGrow?: string | number;
-    flexShrink?: string | number;
-    flexBasis?: string | number;
-    alignSelf?: string | number;
+    flex?: ElementProps;
+    flexDirection?: ElementProps;
+    flexWrap?: ElementProps;
+    justifyContent?: ElementProps;
+    alignItems?: ElementProps;
+    alignContent?: ElementProps;
+    order?: ElementProps;
+    flexGrow?: ElementProps;
+    flexShrink?: ElementProps;
+    flexBasis?: ElementProps;
+    alignSelf?: ElementProps;
 }
 
 export const flexbox = (props: FlexboxProps): string => {

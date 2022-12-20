@@ -2,7 +2,7 @@ import { Button } from '@dash-ui-lib/button';
 
 export function Index() {
   return (
-    <Button primary>
+    <Button primary onClick={()=>console.log("clicked")}>
       testing
     </Button>
   );
