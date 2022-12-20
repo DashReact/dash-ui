@@ -15,8 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@dash-ui-lib/button": ["packages/button/src/index.ts"],
       "@dash-ui-lib/react": ["packages/react/src/index.ts"],
-      "@dash-ui-lib/theme": ["packages/theme/src/index.ts"]
+      "@dash-ui-lib/theme": ["packages/theme/src/index.ts"],
+      "@dash-ui-lib/utilities": ["packages/utilities/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

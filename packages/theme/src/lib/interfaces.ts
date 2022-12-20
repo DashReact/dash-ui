@@ -3,39 +3,40 @@ export interface Theme {
     spacing: Sizes,
     fontSizes: Sizes,
     fontWeights: FontWeights,
-    breackPoints: ScreenSizes,
+    breackPoints: BreackPoints,
+    [key: string]: string | number | Colors | Sizes | FontWeights | BreackPoints
 }
 
 export interface FontWeights {
-    normal: string,
-    medium: string,
-    bold: string,
+    normal: string | number,
+    medium: string | number,
+    bold: string | number,
+    [key: string]: string | number
 }
 
-export interface ScreenSizes {
-    sm: string,
-    md: string,
-    lg: string,
-    xl: string,
-    '2xl': string,
-    [key: string]: string
+export interface BreackPoints {
+    sm: string | number,
+    md: string | number,
+    lg: string | number,
+    xl: string | number,
+    [key: string]: string | number
 }
 
 export interface Sizes {
-    xs: string,
-    sm: string,
-    md: string,
-    lg: string,
-    xl: string,
-    '2xl': string,
-    '3xl': string,
-    '4xl': string,
-    '5xl': string,
-    '6xl': string,
-    '7xl': string,
-    '8xl': string,
-    '9xl': string,
-    [key: string]: string
+    xs: string | number,
+    sm: string | number,
+    md: string | number,
+    lg: string | number,
+    xl: string | number,
+    '2xl': string | number,
+    '3xl': string | number,
+    '4xl': string | number,
+    '5xl': string | number,
+    '6xl': string | number,
+    '7xl': string | number,
+    '8xl': string | number,
+    '9xl': string | number,
+    [key: string]: string | number
 }
 
 export interface Colors {
@@ -52,17 +53,18 @@ export interface Colors {
     cyan: ColorsScales,
     purple: ColorsScales,
     pink: ColorsScales,
+    [key: string]: ColorsScales
 }
 
 export interface ColorsScales {
-    50: string,
-    100: string,
-    200: string,
-    300: string,
-    400: string,
-    500: string,
-    600: string,
-    700: string,
-    800: string,
-    900: string,
+    50: string | number,
+    100: string | number,
+    200: string | number,
+    300: string | number,
+    400: string | number,
+    500: string | number,
+    600: string | number,
+    700: string | number,
+    800: string | number,
+    900: string | number,
 }

@@ -1,6 +1,6 @@
 import { Theme } from "./interfaces"
 
-const defaultTheme: Theme = {
+export const defaultTheme: Theme = {
     colors: {
         primary: {
             "50": "#f8f6ff",
@@ -203,5 +203,3 @@ const defaultTheme: Theme = {
     },
 }
 
-
-export default defaultTheme
