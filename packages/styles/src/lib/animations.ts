@@ -1,19 +1,23 @@
+import { addPx } from "./utils";
 
 
 export interface AnimationProps {
-    animation?: string;
-    animationDelay?: string;
-    animationDirection?: string;
-    animationDuration?: string;
-    animationFillMode?: string;
-    animationIterationCount?: string;
-    animationName?: string;
-    animationPlayState?: string;
-    animationTimingFunction?: string;
+    animation?: string | number;
+    animationDelay?: string | number;
+    animationDirection?: string | number;
+    animationDuration?: string | number;
+    animationFillMode?: string | number;
+    animationIterationCount?: string | number;
+    animationName?: string | number;
+    animationPlayState?: string | number;
+    animationTimingFunction?: string | number;
 }
 
 export const animations = (props: AnimationProps): string => {
-    const { animation, animationDelay, animationDirection, animationDuration, animationFillMode, animationIterationCount, animationName, animationPlayState, animationTimingFunction } = props;
+
+    const { animation, animationDelay, animationDirection, animationDuration, animationFillMode, animationIterationCount, animationName, animationPlayState, animationTimingFunction } = addPx(props);
+
+
     return `
         ${animation ? `animation: ${animation};` : ''}
         ${animationDelay ? `animation-delay: ${animationDelay};` : ''}

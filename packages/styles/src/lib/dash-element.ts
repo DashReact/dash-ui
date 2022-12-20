@@ -54,7 +54,9 @@ export interface DashElementProps extends
     TransitionProps { }
 
 
-export const dashElement = (props: DashElementProps): string => {
+export const dashStyles = (props: DashElementProps): string => {
+
+
     return `
     ${animations(props)}
     ${background(props)}

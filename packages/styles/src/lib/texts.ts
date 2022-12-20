@@ -1,21 +1,22 @@
+import { addPx } from "./utils";
 
 export interface TextsProps {
-    color?: string;
-    textAlign?: string;
-    textTransform?: string;
-    textShadow?: string;
-    textOverflow?: string;
-    textDecoration?: string;
-    textIndent?: string;
-    textJustify?: string;
-    textEmphasis?: string;
-    textUnderlinePosition?: string;
-    textOrientation?: string;
+    textColor?: string | number;
+    textAlign?: string | number;
+    textTransform?: string | number;
+    textShadow?: string | number;
+    textOverflow?: string | number;
+    textDecoration?: string | number;
+    textIndent?: string | number;
+    textJustify?: string | number;
+    textEmphasis?: string | number;
+    textUnderlinePosition?: string | number;
+    textOrientation?: string | number;
 }
 
 export const texts = (props: TextsProps): string => {
     const {
-        color,
+        textColor,
         textAlign,
         textTransform,
         textShadow,
@@ -26,9 +27,9 @@ export const texts = (props: TextsProps): string => {
         textEmphasis,
         textUnderlinePosition,
         textOrientation,
-    } = props;
+    } = addPx(props);
     return `
-        ${color ? `color: ${color};` : ''}
+        ${textColor ? `color: ${textColor};` : ''}
         ${textAlign ? `text-align: ${textAlign};` : ''}
         ${textTransform ? `text-transform: ${textTransform};` : ''}
         ${textShadow ? `text-shadow: ${textShadow};` : ''}

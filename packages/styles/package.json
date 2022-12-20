@@ -1,5 +1,5 @@
 {
-  "name": "@dash-ui-lib/utilities",
+  "name": "@dash-ui-lib/styles",
   "version": "0.0.1",
   "main": "./index.js",
   "module": "./index.mjs",

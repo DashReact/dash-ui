@@ -1,3 +1,4 @@
+import { addPx } from "./utils";
 
 export interface PaddingProps {
   p?: string | number;
@@ -11,7 +12,7 @@ export interface PaddingProps {
 
 
 export const padding = (props: PaddingProps): string => {
-  const { p, pt, pr, pb, pl, px, py } = props;
+  const { p, pt, pr, pb, pl, px, py } = addPx(props);
 
   // Check if the values exist and return the correct css
   return `

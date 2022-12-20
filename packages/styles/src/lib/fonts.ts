@@ -1,31 +1,32 @@
+import { addPx } from "./utils";
 
 
 export interface FontProps {
-    fontFamily?: string;
-    fontSize?: string | number;
-    fontWeight?: string | number;
-    lineHeight?: string | number;
-    letterSpacing?: string | number;
-    textAlign?: string;
-    fontStyle?: string;
-    textTransform?: string;
-    textDecoration?: string;
-    textOverflow?: string;
-    whiteSpace?: string;
-    wordBreak?: string;
-    wordWrap?: string;
-    overflowWrap?: string;
-    textShadow?: string;
-    textRendering?: string;
-    fontVariant?: string;
-    fontFeatureSettings?: string;
-    fontKerning?: string;
-    fontOpticalSizing?: string;
-    fontSmoothing?: string;
+    fontFamily?: string | number;
+    fontSize?: string | number | number;
+    fontWeight?: string | number | number;
+    lineHeight?: string | number | number;
+    letterSpacing?: string | number | number;
+    textAlign?: string | number;
+    fontStyle?: string | number;
+    textTransform?: string | number;
+    textDecoration?: string | number;
+    textOverflow?: string | number;
+    whiteSpace?: string | number;
+    wordBreak?: string | number;
+    wordWrap?: string | number;
+    overflowWrap?: string | number;
+    textShadow?: string | number;
+    textRendering?: string | number;
+    fontVariant?: string | number;
+    fontFeatureSettings?: string | number;
+    fontKerning?: string | number;
+    fontOpticalSizing?: string | number;
+    fontSmoothing?: string | number;
 }
 
 export const font = (props: FontProps): string => {
-    const { fontFamily, fontSize, fontWeight, lineHeight, letterSpacing, textAlign, fontStyle, textTransform, textDecoration, textOverflow, whiteSpace, wordBreak, wordWrap, overflowWrap, textShadow, textRendering, fontVariant, fontFeatureSettings, fontKerning, fontOpticalSizing, fontSmoothing } = props;
+    const { fontFamily, fontSize, fontWeight, lineHeight, letterSpacing, textAlign, fontStyle, textTransform, textDecoration, textOverflow, whiteSpace, wordBreak, wordWrap, overflowWrap, textShadow, textRendering, fontVariant, fontFeatureSettings, fontKerning, fontOpticalSizing, fontSmoothing } = addPx(props);
     return `
         ${fontFamily ? `font-family: ${fontFamily};` : ''}
         ${fontSize ? `font-size: ${fontSize};` : ''}

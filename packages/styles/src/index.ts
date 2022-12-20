@@ -3,6 +3,8 @@ export * from './lib/background';
 export * from './lib/borders';
 export * from './lib/breackpoints';
 export * from './lib/colors';
+export * from './lib/dash-element';
+export * from './lib/defineStyleConfig';
 export * from './lib/flexbox';
 export * from './lib/fonts';
 export * from './lib/grids';

@@ -1,3 +1,5 @@
+import { addPx } from "./utils";
+
 export interface MarginProps {
     m?: string | number;
     mt?: string | number;
@@ -10,7 +12,7 @@ export interface MarginProps {
 
 
 export const margin = (props: MarginProps): string => {
-    const { m, mt, mr, mb, ml, mx, my } = props;
+    const { m, mt, mr, mb, ml, mx, my } = addPx(props);
 
     // Check if the values exist and return the correct css
     return `

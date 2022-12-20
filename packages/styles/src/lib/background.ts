@@ -1,15 +1,16 @@
+import { addPx } from "./utils";
 
 export interface BackgroundProps {
-    bg?: string;
-    bgImage?: string;
-    bgSize?: string;
-    bgPosition?: string;
-    bgRepeat?: string;
-    bgAttachment?: string;
+    bg?: string | number;
+    bgImage?: string | number;
+    bgSize?: string | number;
+    bgPosition?: string | number;
+    bgRepeat?: string | number;
+    bgAttachment?: string | number;
 }
 
 export const background = (props: BackgroundProps): string => {
-    const { bg, bgImage, bgSize, bgPosition, bgRepeat, bgAttachment } = props;
+    const { bg, bgImage, bgSize, bgPosition, bgRepeat, bgAttachment } = addPx(props);
     return `
         ${bg ? `background-color: ${bg};` : ''}
         ${bgImage ? `background-image: url(${bgImage});` : ''}

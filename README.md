@@ -4,6 +4,7 @@ Components library for build mobiles aplications with React and React Native bui
 
 ![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/icon.png?raw=true)
 
+
 ## Libraries
 
 This section contains all the comands related to libraries manipulation in the workspace.
@@ -85,3 +86,7 @@ npm publish --access public
 ```bash
 nx deploy {lib-name} --dry-run
 ```
+
+#### Running app
+
+nx serve {app-name}

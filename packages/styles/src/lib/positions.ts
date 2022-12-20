@@ -1,3 +1,4 @@
+import { addPx } from "./utils";
 
 export interface PositionProps {
     position?: string;
@@ -9,7 +10,7 @@ export interface PositionProps {
 }
 
 export const position = (props: PositionProps): string => {
-    const { position, top, right, bottom, left, zIndex } = props;
+    const { position, top, right, bottom, left, zIndex } = addPx(props);
 
     return `
     ${position ? `position: ${position};` : ''}

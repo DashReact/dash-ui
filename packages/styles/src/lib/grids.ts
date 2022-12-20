@@ -1,23 +1,24 @@
+import { addPx } from "./utils";
 
 export interface GridProps {
-    grid?: string;
-    gridArea?: string;
-    gridAutoColumns?: string;
-    gridAutoFlow?: string;
-    gridAutoRows?: string;
-    gridColumn?: string;
-    gridColumnEnd?: string;
-    gridColumnGap?: string;
-    gridColumnStart?: string;
-    gridGap?: string;
-    gridRow?: string;
-    gridRowEnd?: string;
-    gridRowGap?: string;
-    gridRowStart?: string;
-    gridTemplate?: string;
-    gridTemplateAreas?: string;
-    gridTemplateColumns?: string;
-    gridTemplateRows?: string;
+    grid?: string | number;
+    gridArea?: string | number;
+    gridAutoColumns?: string | number;
+    gridAutoFlow?: string | number;
+    gridAutoRows?: string | number;
+    gridColumn?: string | number;
+    gridColumnEnd?: string | number;
+    gridColumnGap?: string | number;
+    gridColumnStart?: string | number;
+    gridGap?: string | number;
+    gridRow?: string | number;
+    gridRowEnd?: string | number;
+    gridRowGap?: string | number;
+    gridRowStart?: string | number;
+    gridTemplate?: string | number;
+    gridTemplateAreas?: string | number;
+    gridTemplateColumns?: string | number;
+    gridTemplateRows?: string | number;
 }
 
 export const grid = (props: GridProps): string => {
@@ -40,7 +41,7 @@ export const grid = (props: GridProps): string => {
         gridTemplateAreas,
         gridTemplateColumns,
         gridTemplateRows,
-    } = props;
+    } = addPx(props);
 
     return `
         ${grid ? `grid: ${grid};` : ''}

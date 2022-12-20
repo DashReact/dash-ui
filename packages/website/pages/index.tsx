@@ -1,9 +1,11 @@
-import styled from 'styled-components';
-
-const StyledPage = styled.div``;
+import { Button } from '@dash-ui-lib/button';
 
 export function Index() {
-  return <StyledPage>testing</StyledPage>;
+  return (
+    <Button primary>
+      testing
+    </Button>
+  );
 }
 
 export default Index;

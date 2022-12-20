@@ -1,14 +1,15 @@
+import { addPx } from "./utils";
 
 export interface TransitionProps {
-    transition?: string;
-    transitionDelay?: string;
-    transitionDuration?: string;
-    transitionProperty?: string;
-    transitionTimingFunction?: string;
+    transition?: string | number;
+    transitionDelay?: string | number;
+    transitionDuration?: string | number;
+    transitionProperty?: string | number;
+    transitionTimingFunction?: string | number;
 }
 
 export const transitions = (props: TransitionProps): string => {
-    const { transition, transitionDelay, transitionDuration, transitionProperty, transitionTimingFunction } = props;
+    const { transition, transitionDelay, transitionDuration, transitionProperty, transitionTimingFunction } = addPx(props);
     return `
         ${transition ? `transition: ${transition};` : ''}
         ${transitionDelay ? `transition-delay: ${transitionDelay};` : ''}
