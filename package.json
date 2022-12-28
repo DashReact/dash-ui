@@ -13,7 +13,6 @@
     "react-dom": "18.2.0",
     "react-is": "18.2.0",
     "regenerator-runtime": "0.13.7",
-    "styled-components": "5.3.6",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
@@ -42,13 +41,11 @@
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
     "@types/react-is": "17.0.3",
-    "@types/styled-components": "5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
     "autoprefixer": "10.4.13",
     "babel-jest": "28.1.1",
     "babel-loader": "8.1.0",
-    "babel-plugin-styled-components": "1.10.7",
     "cypress": "^11.0.0",
     "eslint": "~8.15.0",
     "eslint-config-next": "13.0.0",
