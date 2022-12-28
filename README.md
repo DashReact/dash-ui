@@ -1,9 +1,8 @@
 # DashUiLib
 
-Components library inspired in [Chakra UI](https://chakra-ui.com/) for build mobile aplications with React and React Native builded with styled components
+Components library for build mobile aplications with JavaScript, React and React Native
 
 ![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/icon.png?raw=true)
-
 
 ## Libraries
 
