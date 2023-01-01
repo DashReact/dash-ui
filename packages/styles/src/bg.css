@@ -1,3 +1,7 @@
+.bg-none {
+  background-color: transparent;
+}
+
 .bg-primary {
   background-color: var(--dash-color-primary);
 }

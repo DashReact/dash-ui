@@ -5,6 +5,10 @@
   border-radius: var(--dash-rounded-sm);
   padding: var(--dash-spacing-sm) calc(var(--dash-spacing-md) * 2);
   outline: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--dash-spacing-sm);
   outline-offset: 2px;
   line-height: 1.2;
   transition: all 0.2s ease-in-out;
@@ -84,19 +88,19 @@
 }
 
 .btn-sm {
-  padding: var(--dash-spacing-xs) var(--dash-spacing-sm);
+  padding: var(--dash-spacing-sm)  calc(var(--dash-spacing-sm) * 2)
 }
 
 .btn-md {
-  padding: var(--dash-spacing-sm) var(--dash-spacing-md);
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-md) * 2)
 }
 
 .btn-lg {
-  padding: var(--dash-spacing-md) var(--dash-spacing-lg);
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-lg) * 3)
 }
 
 .btn-xl {
-  padding: var(--dash-spacing-lg) var(--dash-spacing-xl);
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-xl) * 4)
 }
 
 .btn-full {

@@ -68,29 +68,27 @@
   --dash-font-color: #e1e1ff;
   --dash-bg-color: #252525;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-html {
+html , body, #root, div {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--dash-font-color);
   background-color: var(--dash-bg-color);
+  transition: all 0.2s ease-in-out;
+  padding: 0;
+  margin: 0;
 }
 
+@import './bg.css';
+@import './blur.css';
+@import './border.css';
+@import './button.css';
 @import './flex.css';
+@import './height.css';
 @import './margin.css';
 @import './padding.css';
-@import './text.css';
-@import './border.css';
-@import './shadow.css';
-@import './rounded.css';
-@import './bg.css';
-@import './button.css';
-@import './width.css';
-@import './height.css';
-@import './blur.css';
 @import './positions.css';
+@import './rounded.css';
+@import './shadow.css';
+@import './text.css';
+@import './width.css';
