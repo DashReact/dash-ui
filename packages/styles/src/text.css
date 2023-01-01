@@ -1,0 +1,169 @@
+.text-primary {
+  color: var(--dash-color-primary);
+}
+
+.text-secondary {
+  color: var(--dash-color-secondary);
+}
+
+.text-white {
+  color: var(--dash-color-white);
+}
+
+.text-black {
+  color: var(--dash-color-black);
+}
+
+.text-gray {
+  color: var(--dash-color-gray);
+}
+
+.text-red {
+  color: var(--dash-color-red);
+}
+
+.text-orange {
+  color: var(--dash-color-orange);
+}
+
+.text-yellow {
+  color: var(--dash-color-yellow);
+}
+
+.text-green {
+  color: var(--dash-color-green);
+}
+
+.text-teal {
+  color: var(--dash-color-teal);
+}
+
+.text-blue {
+  color: var(--dash-color-blue);
+}
+
+.text-indigo {
+  color: var(--dash-color-indigo);
+}
+
+.text-cyan {
+  color: var(--dash-color-cyan);
+}
+
+.text-purple {
+  color: var(--dash-color-purple);
+}
+
+.text-pink {
+  color: var(--dash-color-pink);
+}
+
+.text-xs {
+  font-size: var(--dash-font-size-xs);
+}
+
+.text-sm {
+  font-size: var(--dash-font-size-sm);
+}
+
+.text-md {
+  font-size: var(--dash-font-size-md);
+}
+
+.text-lg {
+  font-size: var(--dash-font-size-lg);
+}
+
+.text-xl {
+  font-size: var(--dash-font-size-xl);
+}
+
+.text-2xl {
+  font-size: var(--dash-font-size-2xl);
+}
+
+.text-3xl {
+  font-size: var(--dash-font-size-3xl);
+}
+
+.text-4xl {
+  font-size: var(--dash-font-size-4xl);
+}
+
+.text-5xl {
+  font-size: var(--dash-font-size-5xl);
+}
+
+.text-6xl {
+  font-size: var(--dash-font-size-6xl);
+}
+
+.text-normal {
+  font-weight: var(--dash-font-weight-normal);
+}
+
+.text-medium {
+  font-weight: var(--dash-font-weight-medium);
+}
+
+.text-semibold {
+  font-weight: var(--dash-font-weight-semibold);
+}
+
+.text-bold {
+  font-weight: var(--dash-font-weight-bold);
+}
+
+.text-extrabold {
+  font-weight: var(--dash-font-weight-extrabold);
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,96 @@
+:root {
+  --dash-color-primary: #8b68f5;
+  --dash-color-secondary: #a286f7;
+  --dash-font-color: #252525;
+  --dash-bg-color: #fff;
+  /* Colors */
+  --dash-color-white: rgba(255, 255, 255, 0.92);
+  --dash-color-black: rgba(0, 0, 0, 0.16);
+  --dash-color-gray: #cbd5e0;
+  --dash-color-red: #fc8181;
+  --dash-color-orange: #f6ad55;
+  --dash-color-yellow: #f6e05e;
+  --dash-color-green: #68d391;
+  --dash-color-teal: #4fd1c5;
+  --dash-color-blue: #63b3ed;
+  --dash-color-indigo: #7f9cf5;
+  --dash-color-cyan: #76e4f7;
+  --dash-color-purple: #b794f4;
+  --dash-color-pink: #f687b3;
+  /* Breackpoints */
+  --dash-breakpoint-sm: 30em;
+  --dash-breakpoint-md: 48em;
+  --dash-breakpoint-lg: 62em;
+  --dash-breakpoint-xl: 80em;
+  /* Spacing */
+  --dash-spacing-sm: 0.5em;
+  --dash-spacing-md: 1em;
+  --dash-spacing-lg: 1.5em;
+  --dash-spacing-xl: 2em;
+  /* Font sizes */
+  --dash-font-size-xs: 0.75em;
+  --dash-font-size-sm: 0.875em;
+  --dash-font-size-md: 1em;
+  --dash-font-size-lg: 1.125em;
+  --dash-font-size-xl: 1.25em;
+  --dash-font-size-2xl: 1.5em;
+  --dash-font-size-3xl: 1.875em;
+  --dash-font-size-4xl: 2.25em;
+  --dash-font-size-5xl: 3em;
+  --dash-font-size-6xl: 4em;
+  /* Font weights */
+  --dash-font-weight-normal: 400;
+  --dash-font-weight-medium: 500;
+  --dash-font-weight-semibold: 600;
+  --dash-font-weight-bold: 700;
+  --dash-font-weight-extrabold: 800;
+  /* Border radius */
+  --dash-rounded-sm: 0.125em;
+  --dash-rounded-md: 0.25em;
+  --dash-rounded-lg: 0.5em;
+  --dash-rounded-full: 9999px;
+  /* Shadows */
+  --dash-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --dash-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --dash-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --dash-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    /* Blurn */
+    --dash-blur-sm: 5px;
+    --dash-blur-md: 10px;
+    --dash-blur-lg: 15px;
+    --dash-blur-xl: 20px;
+}
+
+[data-theme='dark'] {
+  --dash-font-color: #e1e1ff;
+  --dash-bg-color: #252525;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--dash-font-color);
+  background-color: var(--dash-bg-color);
+}
+
+@import './flex.css';
+@import './margin.css';
+@import './padding.css';
+@import './text.css';
+@import './border.css';
+@import './shadow.css';
+@import './rounded.css';
+@import './bg.css';
+@import './button.css';
+@import './width.css';
+@import './height.css';
+@import './blur.css';
+@import './positions.css';

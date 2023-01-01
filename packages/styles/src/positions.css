@@ -1,0 +1,79 @@
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.top-sm {
+  top: var(--dash-spacing-sm);
+}
+
+.top-md {
+  top: var(--dash-spacing-md);
+}
+
+.top-lg {
+  top: var(--dash-spacing-lg);
+}
+
+.top-xl {
+  top: var(--dash-spacing-xl);
+}
+
+.bottom-sm {
+  bottom: var(--dash-spacing-sm);
+}
+
+.bottom-md {
+  bottom: var(--dash-spacing-md);
+}
+
+.bottom-lg {
+  bottom: var(--dash-spacing-lg);
+}
+
+.bottom-xl {
+  bottom: var(--dash-spacing-xl);
+}
+
+.left-sm {
+  left: var(--dash-spacing-sm);
+}
+
+.left-md {
+  left: var(--dash-spacing-md);
+}
+
+.left-lg {
+  left: var(--dash-spacing-lg);
+}
+
+.left-xl {
+  left: var(--dash-spacing-xl);
+}
+
+.right-sm {
+  right: var(--dash-spacing-sm);
+}
+
+.right-md {
+  right: var(--dash-spacing-md);
+}
+
+.right-lg {
+  right: var(--dash-spacing-lg);
+}
+
+.right-xl {
+  right: var(--dash-spacing-xl);
+}
