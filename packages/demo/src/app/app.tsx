@@ -173,15 +173,15 @@ export function App() {
       </div>
       <div className={'m-md p-sm shadow-sm round-md'}>
         <div className="pb-sm text-bold">Grid</div> <br />
-        <div className="py-xl text-md ">grid-cols-2</div>{' '}
-        <div className="p-sm round-md p-md h-xl grid grid-cols-2 grid-gap-md h-6xl overflow-y-auto">
+        <div className="py-xl text-md ">grid-t-cols-2</div>{' '}
+        <div className="p-sm round-md p-md h-xl grid grid-t-cols-2 grid-gap-md h-6xl overflow-y-auto">
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
         </div>
-        <div className="py-xl text-md ">grid-cols-3</div>{' '}
-        <div className="p-sm round-md p-md h-xl grid grid-cols-3 grid-gap-md h-6xl overflow-y-auto">
+        <div className="py-xl text-md ">grid-t-cols-3</div>{' '}
+        <div className="p-sm round-md p-md h-xl grid grid-t-cols-3 grid-gap-md h-6xl overflow-y-auto">
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>

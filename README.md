@@ -1,8 +1,30 @@
-# DashUiLib
+# Dash UI Lib (alpha)
 
 Components library for build modern web applications
 
 ![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/icon.png?raw=true)
+
+## Demo components
+
+#### Themes and buttons
+
+![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/demo/themes-btns.png?raw=true)
+
+#### Layouts and text utilities
+
+![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/demo/layouts-text.png?raw=true)
+
+#### Flex utilities
+
+![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/demo/flex.png?raw=true)
+
+#### Grid system
+
+![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/demo/grid.png?raw=true)
+
+#### Glass effects and loaders
+
+![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/demo/glass-loaders.png?raw=true)
 
 ## Libraries
 
