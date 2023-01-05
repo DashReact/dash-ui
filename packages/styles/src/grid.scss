@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+
+@each $name, $val in $numbers {
+  .grid-col-#{$name} {
+    grid-column: span $val;
+  }
+}
+
+@each $name, $val in $numbers {
+  .grid-row-#{$name} {
+    grid-column: span $val;
+  }
+}
+
+@each $name, $val in $numbers {
+  .grid-t-cols-#{$name} {
+    grid-template-columns: repeat($val, 1fr);
+  }
+}
+
+@each $name, $val in $numbers {
+  .grid-t-rows-#{$name} {
+    grid-template-rows: repeat($val, 1fr);
+  }
+}
+
+@each $name, $val in $sizes {
+  .grid-gap-#{$name} {
+    grid-gap: $val;
+  }
+}

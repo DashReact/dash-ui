@@ -1,0 +1,5 @@
+@each $name, $val in $sizes {
+  .round-#{$name} {
+    border-radius: $val;
+  }
+}

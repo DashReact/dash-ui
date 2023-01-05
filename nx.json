@@ -57,15 +57,26 @@
   "generators": {
     "@nrwl/react": {
       "application": {
+        "style": "scss",
+        "linter": "eslint",
+        "bundler": "vite",
         "babel": true
+      },
+      "component": {
+        "style": "scss"
+      },
+      "library": {
+        "style": "scss",
+        "linter": "eslint",
+        "unitTestRunner": "vitest"
       }
     },
     "@nrwl/next": {
       "application": {
-        "style": "css",
+        "style": "scss",
         "linter": "eslint"
       }
     }
   },
-  "defaultProject": "website"
+  "defaultProject": "docs"
 }

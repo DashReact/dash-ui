@@ -1,0 +1,52 @@
+:root {
+  --dash-color-primary: #8b68f5;
+  --dash-color-secondary: #a286f7;
+  --dash-font-color: #252525;
+  --dash-bg-color: #fff;
+  /* Colors */
+  --dash-color-white: rgba(255, 255, 255, 0.92);
+  --dash-color-black: rgba(0, 0, 0, 0.16);
+  --dash-color-gray: #cbd5e0;
+  --dash-color-red: #fc8181;
+  --dash-color-orange: #f6ad55;
+  --dash-color-yellow: #f6e05e;
+  --dash-color-green: #68d391;
+  --dash-color-teal: #4fd1c5;
+  --dash-color-blue: #63b3ed;
+  --dash-color-indigo: #7f9cf5;
+  --dash-color-cyan: #76e4f7;
+  --dash-color-purple: #b794f4;
+  --dash-color-pink: #f687b3;
+  /* Breackpoints */
+  --dash-breakpoint-sm: 30em;
+  --dash-breakpoint-md: 48em;
+  --dash-breakpoint-lg: 62em;
+  --dash-breakpoint-xl: 80em;
+  /* Spacing */
+  --dash-size-xs: 0.25em;
+  --dash-size-sm: 0.5em;
+  --dash-size-md: 1em;
+  --dash-size-lg: 1.5em;
+  --dash-size-xl: 2em;
+  --dash-size-2xl: 2.5em;
+  --dash-size-3xl: 3em;
+  --dash-size-4xl: 3.5em;
+  --dash-size-5xl: 4em;
+  --dash-size-6xl: 4.5em;
+  --dash-size-7xl: 5em;
+  --dash-size-8xl: 5.5em;
+  --dash-size-9xl: 6em;
+  --dash-size-full: 100%;
+  --dash-size-screen: 100vw;
+  /* Font weights */
+  --dash-font-weight-normal: 400;
+  --dash-font-weight-medium: 500;
+  --dash-font-weight-semibold: 600;
+  --dash-font-weight-bold: 700;
+  --dash-font-weight-extrabold: 800;
+}
+
+[data-theme='dark'] {
+  --dash-font-color: #e1e1ff;
+  --dash-bg-color: #252525;
+}

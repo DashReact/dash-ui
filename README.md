@@ -8,6 +8,10 @@ Components library for build modern web applications
 
 This section contains all the comands related to libraries manipulation in the workspace.
 
+##### Generating apps
+
+nx g @nrwl/react:app {app-name}
+
 ##### Generating Libraries
 
 ```bash

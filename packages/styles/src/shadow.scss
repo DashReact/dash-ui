@@ -1,0 +1,22 @@
+.shadow-sm {
+  box-shadow: var(--dash-shadow-sm);
+}
+
+.shadow-md {
+  box-shadow: var(--dash-shadow-md);
+}
+
+.shadow-lg {
+  box-shadow: var(--dash-shadow-lg);
+}
+
+.shadow-xl {
+  box-shadow: var(--dash-shadow-xl);
+}
+
+@each $name, $val in $sizes {
+  .shadow-#{$name} {
+    box-shadow: 0 $val calc($val * 2) calc($val * -5) rgba(0, 0, 0, 0.1),
+      0 calc($val * 10) calc($val * 10) calc($val * -5) rgba(0, 0, 0, 0.04);
+  }
+}

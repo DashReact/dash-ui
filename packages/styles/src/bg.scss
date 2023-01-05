@@ -1,0 +1,10 @@
+@each $name, $val in $colors {
+  .bg-#{$name} {
+    background-color: $val;
+  }
+}
+
+
+.bg-none {
+  background-color: transparent;
+}

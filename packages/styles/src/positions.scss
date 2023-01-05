@@ -1,0 +1,39 @@
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+@each $name, $val in $sizes {
+  .top-#{$name} {
+    top: $val;
+  }
+}
+
+@each $name, $val in $sizes {
+  .bottom-#{$name} {
+    bottom: $val;
+  }
+}
+
+@each $name, $val in $sizes {
+  .left-#{$name} {
+    left: $val;
+  }
+}
+
+@each $name, $val in $sizes {
+  .right-#{$name} {
+    right: $val;
+  }
+}

@@ -1,0 +1,82 @@
+
+@each $name, $val in $colors {
+  .text-#{$name} {
+    color: $val;
+  }
+}
+
+@each $name, $val in $sizes {
+  .text-#{$name} {
+    font-size: $val;
+  }
+}
+
+.text-normal {
+  font-weight: var(--dash-font-weight-normal);
+}
+
+.text-medium {
+  font-weight: var(--dash-font-weight-medium);
+}
+
+.text-semibold {
+  font-weight: var(--dash-font-weight-semibold);
+}
+
+.text-bold {
+  font-weight: var(--dash-font-weight-bold);
+}
+
+.text-extrabold {
+  font-weight: var(--dash-font-weight-extrabold);
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -2,7 +2,7 @@
   "name": "styles",
   "sourceRoot": "packages/styles/src",
   "projectType": "library",
-  "tags": ["components", "ts", "dash-ui", "react", "react-native", "js"],
+  "tags": ["components", "ts", "dash-ui", "react", "js"],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
@@ -32,9 +32,10 @@
       }
     },
     "test": {
-      "executor": "@nrwl/vite:test",
-      "outputs": ["{projectRoot}/coverage"],
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
+        "jestConfig": "packages/styles/jest.config.ts",
         "passWithNoTests": true
       }
     }

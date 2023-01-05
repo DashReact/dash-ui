@@ -1,0 +1,42 @@
+// Variables
+@import "./variables.scss";
+
+/* Components */
+@import './button.scss';
+@import './glass.scss';
+@import './loaders.scss';
+
+// /* Basic styles */
+@import './animations.scss';
+@import './bg.scss';
+@import './blur.scss';
+@import './border.scss';
+@import './cursor.scss';
+@import './flex.scss';
+@import './grid.scss';
+@import './height.scss';
+@import './layout.scss';
+@import './margin.scss';
+@import './overflow.scss';
+@import './padding.scss';
+@import './positions.scss';
+@import './rounded.scss';
+@import './shadow.scss';
+@import './text.scss';
+@import './width.scss';
+
+// base theme
+@import './themes';
+
+html,
+body,
+div {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--dash-font-color);
+  background-color: var(--dash-bg-color);
+  transition: all 0.2s ease-in-out;
+  padding: 0;
+  margin: 0;
+}

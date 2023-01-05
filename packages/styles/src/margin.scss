@@ -1,0 +1,46 @@
+.m-auto {
+  margin: auto;
+}
+
+@each $name, $val in $sizes {
+  .m-#{$name} {
+    margin: $val;
+  }
+}
+
+@each $name, $val in $sizes {
+  .mt-#{$name} {
+    margin-top: $val;
+  }
+}
+
+@each $name, $val in $sizes {
+  .mr-#{$name} {
+    margin-right: $val;
+  }
+}
+@each $name, $val in $sizes {
+  .mb-#{$name} {
+    margin-bottom: $val;
+  }
+}
+
+@each $name, $val in $sizes {
+  .ml-#{$name} {
+    margin-left: $val;
+  }
+}
+
+@each $name, $val in $sizes {
+  .mx-#{$name} {
+    margin-left: $val;
+    margin-right: $val;
+  }
+}
+
+@each $name, $val in $sizes {
+  .my-#{$name} {
+    margin-left: $val;
+    margin-bottom: $val;
+  }
+}

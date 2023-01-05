@@ -1,0 +1,41 @@
+@each $name, $val in $sizes {
+  .p-#{$name} {
+    padding: $val;
+  }
+}
+
+@each $name, $val in $sizes {
+  .pt-#{$name} {
+    padding-top: $val;
+  }
+}
+@each $name, $val in $sizes {
+  .pr-#{$name} {
+    padding-right: $val;
+  }
+}
+
+@each $name, $val in $sizes {
+  .pb-#{$name} {
+    padding-bottom: $val;
+  }
+}
+
+@each $name, $val in $sizes {
+  .pl-#{$name} {
+    padding-left: $val;
+  }
+}
+
+@each $name, $val in $sizes {
+  .px-#{$name} {
+    padding-left: $val;
+    padding-right: $val;
+  }
+}
+@each $name, $val in $sizes {
+  .py-#{$name} {
+    padding-top: $val;
+    padding-bottom: $val;
+  }
+}

@@ -1,0 +1,759 @@
+.btn {
+  color: var(--dash-font-color);
+  background-color: var(--dash-color-primary);
+  border: none;
+  border-radius: var(--dash-rounded-sm);
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-sm) * 2);
+  outline: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--dash-spacing-sm);
+  outline-offset: 2px;
+  line-height: 1.2;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Create click effect on button */
+.btn:active {
+  /* Apply filter to highlight element */
+  filter: brightness(1.5);
+}
+
+/* Create hover effect on button */
+.btn:hover {
+  cursor: pointer;
+  /* Grow the button by 2px on hover */
+  transform: scale(1.01);
+}
+
+.btn-primary {
+  background-color: var(--dash-color-primary);
+}
+
+.btn-secondary {
+  background-color: var(--dash-color-secondary);
+}
+
+.btn-white {
+  background-color: var(--dash-color-white);
+}
+
+.btn-black {
+  background-color: var(--dash-color-black);
+}
+
+.btn-gray {
+  background-color: var(--dash-color-gray);
+}
+
+.btn-red {
+  background-color: var(--dash-color-red);
+}
+
+.btn-orange {
+  background-color: var(--dash-color-orange);
+}
+
+.btn-yellow {
+  background-color: var(--dash-color-yellow);
+}
+
+.btn-green {
+  background-color: var(--dash-color-green);
+}
+
+.btn-teal {
+  background-color: var(--dash-color-teal);
+}
+
+.btn-blue {
+  background-color: var(--dash-color-blue);
+}
+
+.btn-indigo {
+  background-color: var(--dash-color-indigo);
+}
+
+.btn-cyan {
+  background-color: var(--dash-color-cyan);
+}
+
+.btn-purple {
+  background-color: var(--dash-color-purple);
+}
+
+.btn-pink {
+  background-color: var(--dash-color-pink);
+}
+
+.btn-sm {
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-sm) * 2);
+}
+
+.btn-md {
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-md) * 2);
+}
+
+.btn-lg {
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-lg) * 3);
+}
+
+.btn-xl {
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-xl) * 4);
+}
+
+.btn-2xl {
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-2xl) * 5);
+}
+
+.btn-3xl {
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-3xl) * 6);
+}
+
+.btn-4xl {
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-4xl) * 7);
+}
+
+.btn-5xl {
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-5xl) * 8);
+}
+
+.btn-6xl {
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-6xl) * 9);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-rounded {
+  border-radius: var(--dash-rounded);
+}
+
+.btn-rounded-sm {
+  border-radius: var(--dash-rounded-sm);
+}
+
+.btn-rounded-md {
+  border-radius: var(--dash-rounded-md);
+}
+
+.btn-rounded-lg {
+  border-radius: var(--dash-rounded-lg);
+}
+
+.btn-rounded-full {
+  border-radius: 9999px;
+}
+
+/* Variants */
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-primary);
+  color: var(--dash-color-primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--dash-color-primary);
+  color: var(--dash-color-white);
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-primary);
+  color: var(--dash-color-primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--dash-color-primary);
+  color: var(--dash-color-white);
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-secondary);
+  color: var(--dash-color-secondary);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--dash-color-secondary);
+  color: var(--dash-color-white);
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-white);
+  color: var(--dash-color-white);
+}
+
+.btn-outline-white:hover {
+  background-color: var(--dash-color-white);
+  color: var(--dash-color-black);
+}
+
+.btn-outline-black {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-black);
+  color: var(--dash-color-black);
+}
+
+.btn-outline-black:hover {
+  background-color: var(--dash-color-black);
+  color: var(--dash-color-white);
+}
+
+.btn-outline-gray {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-gray);
+  color: var(--dash-color-gray);
+}
+
+.btn-outline-gray:hover {
+  background-color: var(--dash-color-gray);
+  color: var(--dash-color-white);
+}
+
+.btn-outline-red {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-red);
+  color: var(--dash-color-red);
+}
+
+.btn-outline-red:hover {
+  background-color: var(--dash-color-red);
+  color: var(--dash-color-white);
+}
+
+.btn-outline-orange {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-orange);
+  color: var(--dash-color-orange);
+}
+
+.btn-outline-orange:hover {
+  background-color: var(--dash-color-orange);
+  color: var(--dash-color-white);
+}
+
+.btn-outline-yellow {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-yellow);
+  color: var(--dash-color-yellow);
+}
+.btn-outline-yellow:hover {
+  background-color: var(--dash-color-yellow);
+  color: var(--dash-color-white);
+}
+
+.btn-outline-green {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-green);
+  color: var(--dash-color-green);
+}
+
+.btn-outline-green:hover {
+  background-color: var(--dash-color-green);
+  color: var(--dash-color-white);
+}
+
+.btn-outline-teal {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-teal);
+  color: var(--dash-color-teal);
+}
+
+.btn-outline-teal:hover {
+  background-color: var(--dash-color-teal);
+  color: var(--dash-color-white);
+}
+
+.btn-outline-blue {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-blue);
+  color: var(--dash-color-blue);
+}
+
+.btn-outline-blue:hover {
+  background-color: var(--dash-color-blue);
+  color: var(--dash-color-white);
+}
+
+.btn-outline-indigo {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-indigo);
+  color: var(--dash-color-indigo);
+}
+
+.btn-outline-indigo:hover {
+  background-color: var(--dash-color-indigo);
+  color: var(--dash-color-white);
+}
+
+.btn-outline-cyan {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-cyan);
+  color: var(--dash-color-cyan);
+}
+
+.btn-outline-cyan:hover {
+  background-color: var(--dash-color-cyan);
+  color: var(--dash-color-white);
+}
+
+.btn-outline-purple {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-purple);
+  color: var(--dash-color-purple);
+}
+
+.btn-outline-purple:hover {
+  background-color: var(--dash-color-purple);
+  color: var(--dash-color-white);
+}
+
+.btn-outline-pink {
+  background-color: transparent;
+  border: 1px solid var(--dash-color-pink);
+  color: var(--dash-color-pink);
+}
+
+.btn-outline-pink:hover {
+  background-color: var(--dash-color-pink);
+  color: var(--dash-color-white);
+}
+
+/* Variant Ghost */
+.btn-ghost {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-primary);
+}
+
+.btn-ghost:hover {
+  background-color: var(--dash-color-primary);
+  color: var(--dash-color-white);
+}
+
+.btn-ghost-primary {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-primary);
+}
+
+.btn-ghost-primary:hover {
+  background-color: var(--dash-color-primary);
+  color: var(--dash-color-white);
+}
+
+.btn-ghost-secondary {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-secondary);
+}
+
+.btn-ghost-secondary:hover {
+  background-color: var(--dash-color-secondary);
+  color: var(--dash-color-white);
+}
+
+.btn-ghost-white {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-white);
+}
+
+.btn-ghost-white:hover {
+  background-color: var(--dash-color-white);
+  color: var(--dash-color-primary);
+}
+
+.btn-ghost-black {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-black);
+}
+
+.btn-ghost-black:hover {
+  background-color: var(--dash-color-black);
+  color: var(--dash-color-white);
+}
+
+.btn-ghost-gray {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-gray);
+}
+
+.btn-ghost-gray:hover {
+  background-color: var(--dash-color-gray);
+  color: var(--dash-color-white);
+}
+
+.btn-ghost-red {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-red);
+}
+
+.btn-ghost-red:hover {
+  background-color: var(--dash-color-red);
+  color: var(--dash-color-white);
+}
+
+.btn-ghost-orange {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-orange);
+}
+
+.btn-ghost-orange:hover {
+  background-color: var(--dash-color-orange);
+  color: var(--dash-color-white);
+}
+
+.btn-ghost-yellow {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-yellow);
+}
+
+.btn-ghost-yellow:hover {
+  background-color: var(--dash-color-yellow);
+  color: var(--dash-color-white);
+}
+
+.btn-ghost-green {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-green);
+}
+
+.btn-ghost-green:hover {
+  background-color: var(--dash-color-green);
+  color: var(--dash-color-white);
+}
+
+.btn-ghost-teal {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-teal);
+}
+
+.btn-ghost-teal:hover {
+  background-color: var(--dash-color-teal);
+  color: var(--dash-color-white);
+}
+
+.btn-ghost-blue {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-blue);
+}
+
+.btn-ghost-blue:hover {
+  background-color: var(--dash-color-blue);
+  color: var(--dash-color-white);
+}
+
+.btn-ghost-indigo {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-indigo);
+}
+
+.btn-ghost-indigo:hover {
+  background-color: var(--dash-color-indigo);
+  color: var(--dash-color-white);
+}
+
+.btn-ghost-cyan {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-cyan);
+}
+
+.btn-ghost-cyan:hover {
+  background-color: var(--dash-color-cyan);
+  color: var(--dash-color-white);
+}
+
+.btn-ghost-purple {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-purple);
+}
+
+.btn-ghost-purple:hover {
+  background-color: var(--dash-color-purple);
+  color: var(--dash-color-white);
+}
+
+.btn-ghost-pink {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-pink);
+}
+
+.btn-ghost-pink:hover {
+  background-color: var(--dash-color-pink);
+  color: var(--dash-color-white);
+}
+
+/* Variant Link */
+.btn-link {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-primary);
+}
+
+.btn-link:hover {
+  background-color: transparent;
+  color: var(--dash-color-primary);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-link-primary {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-primary);
+}
+
+.btn-link-primary:hover {
+  background-color: transparent;
+  color: var(--dash-color-primary);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-link-secondary {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-secondary);
+}
+
+.btn-link-secondary:hover {
+  background-color: transparent;
+  color: var(--dash-color-secondary);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-link-white {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-white);
+}
+
+.btn-link-white:hover {
+  background-color: transparent;
+  color: var(--dash-color-white);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-link-black {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-black);
+}
+
+.btn-link-black:hover {
+  background-color: transparent;
+  color: var(--dash-color-black);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-link-gray {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-gray);
+}
+
+.btn-link-gray:hover {
+  background-color: transparent;
+  color: var(--dash-color-gray);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-link-red {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-red);
+}
+
+.btn-link-red:hover {
+  background-color: transparent;
+  color: var(--dash-color-red);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-link-orange {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-orange);
+}
+
+.btn-link-orange:hover {
+  background-color: transparent;
+  color: var(--dash-color-orange);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-link-yellow {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-yellow);
+}
+
+.btn-link-yellow:hover {
+  background-color: transparent;
+  color: var(--dash-color-yellow);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-link-green {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-green);
+}
+
+.btn-link-green:hover {
+  background-color: transparent;
+  color: var(--dash-color-green);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-link-teal {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-teal);
+}
+
+.btn-link-teal:hover {
+  background-color: transparent;
+  color: var(--dash-color-teal);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-link-blue {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-blue);
+}
+
+.btn-link-blue:hover {
+  background-color: transparent;
+  color: var(--dash-color-blue);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-link-indigo {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-indigo);
+}
+
+.btn-link-indigo:hover {
+  background-color: transparent;
+  color: var(--dash-color-indigo);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-link-cyan {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-cyan);
+}
+
+.btn-link-cyan:hover {
+  background-color: transparent;
+  color: var(--dash-color-cyan);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-link-purple {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-purple);
+}
+
+.btn-link-purple:hover {
+  background-color: transparent;
+  color: var(--dash-color-purple);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-link-pink {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--dash-color-pink);
+}
+
+.btn-link-pink:hover {
+  background-color: transparent;
+  color: var(--dash-color-pink);
+  /* Draw a line in the button  of the text */
+  text-decoration: underline;
+}
+
+.btn-disabled {
+  opacity: 0.4;
+}
+
+.btn-disabled:hover {
+  cursor: not-allowed;
+}
+
+/* // Add spinner to button */
+.loading-left {
+  opacity: 0.4;
+}
+
+.loading-left:hover {
+  cursor: not-allowed;
+}
+
+.loading-left::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 0.2em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  animation: dash-rotation 1s linear infinite;
+}
+
+.loading-right {
+  opacity: 0.4;
+}
+
+.loading-right:hover {
+  cursor: not-allowed;
+}
+
+.loading-right::after {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 0.2em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  animation: dash-rotation 1s linear infinite;
+}

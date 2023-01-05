@@ -15,8 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@dash-ui-lib/button": ["packages/button/src/index.ts"],
-      "@dash-ui-lib/react": ["packages/react/src/index.ts"],
       "@dash-ui-lib/styles": ["packages/styles/src/index.ts"]
     }
   },
