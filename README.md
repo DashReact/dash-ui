@@ -2,7 +2,7 @@
 
 #### Components library for build modern web applications inspired in [Tailwindcss css](https://tailwindcss.com/) and [Chakra ui](https://chakra-ui.com/)
 
-![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/icon.png?raw=true)
+
 
 <!-- ![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
@@ -32,6 +32,8 @@
 <img style="width: 5em;" title="React Native" src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
 
 </div>
+
+![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/icon.png?raw=true)
 
 ## Demo components
 
