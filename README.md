@@ -2,6 +2,7 @@
 
 #### Components library for build modern web applications inspired in [Tailwindcss css](https://tailwindcss.com/) and [Chakra ui](https://chakra-ui.com/)
 
+![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/icon.png?raw=true)
 
 <!-- <div style="display: flex; gap: 1em;"> -->
 
@@ -19,7 +20,6 @@
 
 <!-- </div> -->
 
-![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/icon.png?raw=true)
 
 ## Demo components
 
