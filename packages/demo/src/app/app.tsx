@@ -3,7 +3,7 @@ import { changeTheme, getTheme } from '@dash-ui-lib/core';
 export function App() {
   return (
     <div>
-      <div className={'m-md p-sm shadow-lg round-md overflow-auto'}>
+      <div className={'m-md p-sm shadow-sm round-md overflow-auto'}>
         <div className="pb-sm text-bold">Change theme</div> <br />
         <button
           className="btn btn-primary"
@@ -12,7 +12,7 @@ export function App() {
           Toggle theme
         </button>
       </div>
-      <div className={'m-md p-sm shadow-lg round-md'}>
+      <div className={'m-md p-sm shadow-sm round-md'}>
         <div className="pb-sm text-bold">Buttons</div> <br />
         <div className={`flex items-center justify-start gap-sm flex-wrap`}>
           <button className="btn btn-primary">Button</button>
@@ -30,10 +30,6 @@ export function App() {
           <button className="btn btn-cyan">Button</button>
           <button className="btn btn-purple">Button</button>
           <button className="btn btn-pink">Button</button>
-          <button className="btn btn-sm">Button</button>
-          <button className="btn btn-md">Button</button>
-          <button className="btn btn-lg">Button</button>
-          <button className="btn btn-xl">Button</button>
           <button className="btn btn-full">Button</button>
           <button className="btn btn-round-xs">Button</button>
           <button className="btn btn-round-sm">Button</button>
@@ -92,7 +88,7 @@ export function App() {
           <button className="btn btn-link-cyan">Button</button>
           <button className="btn btn-link-purple">Button</button>
           <button className="btn btn-link-pink">Button</button>
-          <button className="btn btn-blue">
+          <button className="btn btn-blue text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -115,7 +111,7 @@ export function App() {
           </button>
         </div>
       </div>
-      <div className={'m-md p-sm shadow-lg round-md'}>
+      <div className={'m-md p-sm shadow-sm round-md'}>
         <div className="pb-sm text-bold center">Layouts</div> <br />
         <div className="p-sm round-md p-md w-2xl h-xl left bg-primary">
           left
@@ -136,9 +132,9 @@ export function App() {
           text-right
         </div>
       </div>
-      <div className={'m-md p-sm shadow-lg round-md'}>
+      <div className={'m-md p-sm shadow-sm round-md'}>
         <div className="pb-sm text-bold ">Flex</div> <br />
-        <div className="py-xl text-sm ">justify-start</div> <br />
+        <div className="py-xl text-md ">justify-start</div> <br />
         <div className="p-sm round-md p-md h-xl flex items-center gap-xl flex-wrap justify-start">
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
@@ -147,7 +143,7 @@ export function App() {
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
         </div>
-        <div className="py-xl text-sm ">justify-between</div>{' '}
+        <div className="py-xl text-md ">justify-between</div>{' '}
         <div className="p-sm round-md p-md h-xl flex items-center gap-xl flex-wrap justify-between">
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
@@ -156,7 +152,7 @@ export function App() {
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
         </div>
-        <div className="py-xl text-sm ">justify-end</div>{' '}
+        <div className="py-xl text-md ">justify-end</div>{' '}
         <div className="p-sm round-md p-md h-xl flex items-center gap-xl flex-wrap justify-end">
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
@@ -165,7 +161,7 @@ export function App() {
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
         </div>
-        <div className="py-xl text-sm ">justify-around</div>{' '}
+        <div className="py-xl text-md ">justify-around</div>{' '}
         <div className="p-sm round-md p-md h-xl flex items-center gap-xl flex-wrap justify-around">
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
@@ -175,16 +171,16 @@ export function App() {
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
         </div>
       </div>
-      <div className={'m-md p-sm shadow-lg round-md'}>
+      <div className={'m-md p-sm shadow-sm round-md'}>
         <div className="pb-sm text-bold">Grid</div> <br />
-        <div className="py-xl text-sm ">grid-cols-2</div>{' '}
+        <div className="py-xl text-md ">grid-cols-2</div>{' '}
         <div className="p-sm round-md p-md h-xl grid grid-cols-2 grid-gap-md h-6xl overflow-y-auto">
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
         </div>
-        <div className="py-xl text-sm ">grid-cols-3</div>{' '}
+        <div className="py-xl text-md ">grid-cols-3</div>{' '}
         <div className="p-sm round-md p-md h-xl grid grid-cols-3 grid-gap-md h-6xl overflow-y-auto">
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
@@ -194,13 +190,13 @@ export function App() {
           <div className="p-sm round-md w-6xl h-xl bg-primary"></div>
         </div>
       </div>
-      <div className={'m-md p-sm shadow-lg round-md overflow-auto'}>
+      <div className={'m-md p-sm shadow-sm round-md overflow-auto'}>
         <div className="pb-sm text-bold">Glass effect</div> <br />
         <div className="p-sm round-md p-md h-6xl w-6xl overflow-y-auto glass">
           Glass
         </div>
       </div>
-      <div className={'m-md p-sm shadow-lg round-md overflow-auto'}>
+      <div className={'m-md p-sm shadow-sm round-md overflow-auto'}>
         <div className="pb-sm text-bold">Loaders sizes</div> <br />
         <div className="loader-1 loader-sm"></div>
         <div className="loader-1 loader-md"></div>
@@ -213,10 +209,6 @@ export function App() {
         <div className="loader-1 loader-6xl"></div>
         <div className="pb-sm text-bold">Loaders colors</div> <br />
         <div className="loader-1 loader-2xl loader-primary"></div>
-        <div className="loader-1 loader-2xl loader-secondary"></div>
-        <div className="loader-1 loader-2xl loader-white"></div>
-        <div className="loader-1 loader-2xl loader-black"></div>
-        <div className="loader-1 loader-2xl loader-gray"></div>
         <div className="loader-1 loader-2xl loader-red"></div>
         <div className="loader-1 loader-2xl loader-orange"></div>
         <div className="loader-1 loader-2xl loader-yellow"></div>
