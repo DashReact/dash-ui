@@ -27,6 +27,11 @@
   --dash-spacing-md: 1em;
   --dash-spacing-lg: 1.5em;
   --dash-spacing-xl: 2em;
+  --dash-spacing-2xl: 2.5em;
+  --dash-spacing-3xl: 3em;
+  --dash-spacing-4xl: 3.5em;
+  --dash-spacing-5xl: 4em;
+  --dash-spacing-6xl: 4.5em;
   /* Font sizes */
   --dash-font-size-xs: 0.75em;
   --dash-font-size-sm: 0.875em;
@@ -45,9 +50,9 @@
   --dash-font-weight-bold: 700;
   --dash-font-weight-extrabold: 800;
   /* Border radius */
-  --dash-rounded-sm: 0.125em;
-  --dash-rounded-md: 0.25em;
-  --dash-rounded-lg: 0.5em;
+  --dash-rounded-sm: 0.25em;
+  --dash-rounded-md: 0.5em;
+  --dash-rounded-lg: 0.75em;
   --dash-rounded-full: 9999px;
   /* Shadows */
   --dash-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -79,13 +84,21 @@ html , body, #root, div {
   margin: 0;
 }
 
+/* Components */
+@import './button.css';
+
+/* Basic styles */
+@import './animations.css';
 @import './bg.css';
 @import './blur.css';
 @import './border.css';
-@import './button.css';
+@import './cursor.css';
 @import './flex.css';
+@import './grid.css';
 @import './height.css';
+@import './layout.css';
 @import './margin.css';
+@import './overflow.css';
 @import './padding.css';
 @import './positions.css';
 @import './rounded.css';

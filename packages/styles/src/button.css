@@ -3,7 +3,7 @@
   background-color: var(--dash-color-primary);
   border: none;
   border-radius: var(--dash-rounded-sm);
-  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-md) * 2);
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-sm) * 2);
   outline: 2px solid transparent;
   display: flex;
   align-items: center;
@@ -88,19 +88,39 @@
 }
 
 .btn-sm {
-  padding: var(--dash-spacing-sm)  calc(var(--dash-spacing-sm) * 2)
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-sm) * 2);
 }
 
 .btn-md {
-  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-md) * 2)
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-md) * 2);
 }
 
 .btn-lg {
-  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-lg) * 3)
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-lg) * 3);
 }
 
 .btn-xl {
-  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-xl) * 4)
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-xl) * 4);
+}
+
+.btn-2xl {
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-2xl) * 5);
+}
+
+.btn-3xl {
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-3xl) * 6);
+}
+
+.btn-4xl {
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-4xl) * 7);
+}
+
+.btn-5xl {
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-5xl) * 8);
+}
+
+.btn-6xl {
+  padding: var(--dash-spacing-sm) calc(var(--dash-spacing-6xl) * 9);
 }
 
 .btn-full {
@@ -687,4 +707,53 @@
   color: var(--dash-color-pink);
   /* Draw a line in the button  of the text */
   text-decoration: underline;
+}
+
+.btn-disabled {
+  opacity: 0.4;
+}
+
+.btn-disabled:hover {
+  cursor: not-allowed;
+}
+
+/* // Add spinner to button */
+.btn-loading-left {
+  opacity: 0.4;
+}
+
+.btn-loading-left:hover {
+  cursor: not-allowed;
+}
+
+.btn-loading-left::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 0.2em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  animation: dash-rotation 1s linear infinite;
+}
+
+.btn-loading-right {
+  opacity: 0.4;
+}
+
+.btn-loading-right:hover {
+  cursor: not-allowed;
+}
+
+.btn-loading-right::after {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 0.2em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  animation: dash-rotation 1s linear infinite;
 }

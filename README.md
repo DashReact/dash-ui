@@ -1,6 +1,6 @@
 # DashUiLib
 
-Components library for build mobile aplications with JavaScript and React
+Components library for build modern web applications
 
 ![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/icon.png?raw=true)
 

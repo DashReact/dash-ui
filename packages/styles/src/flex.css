@@ -86,6 +86,26 @@
   gap: var(--dash-spacing-xl);
 }
 
+.gap-2xl {
+  gap: var(--dash-spacing-2xl);
+}
+
+.gap-3xl {
+  gap: var(--dash-spacing-3xl);
+}
+
+.gap-4xl {
+  gap: var(--dash-spacing-4xl);
+}
+
+.gap-5xl {
+  gap: var(--dash-spacing-5xl);
+}
+
+.gap-6xl {
+  gap: var(--dash-spacing-6xl);
+}
+
 .flex-col {
   flex-direction: column;
 }

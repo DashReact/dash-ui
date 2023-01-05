@@ -3,7 +3,7 @@
 }
 
 .round-md {
-  border-radius: var(---dash-rounded-md);
+  border-radius: var(--dash-rounded-md);
 }
 
 .round-lg {

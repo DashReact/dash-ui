@@ -1,0 +1,16 @@
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.hoverflow-auto {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.hoverflow-x-auto {
+  overflow-x: auto;
+}
+
+.hoverflow-y-auto {
+  overflow-y: auto;
+}
