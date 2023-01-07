@@ -4,8 +4,18 @@
   grid-gap: 1rem;
 }
 
+@include media(grid) {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+
 @each $name, $val in $numbers {
   .grid-col-#{$name} {
+    grid-column: span $val;
+  }
+
+  @include media(grid-col-#{$name}) {
     grid-column: span $val;
   }
 }
@@ -14,10 +24,18 @@
   .grid-row-#{$name} {
     grid-column: span $val;
   }
+
+  @include media(grid-row-#{$name}) {
+    grid-column: span $val;
+  }
 }
 
 @each $name, $val in $numbers {
   .grid-t-cols-#{$name} {
+    grid-template-columns: repeat($val, 1fr);
+  }
+
+  @include media(grid-t-cols-#{$name}) {
     grid-template-columns: repeat($val, 1fr);
   }
 }
@@ -26,10 +44,18 @@
   .grid-t-rows-#{$name} {
     grid-template-rows: repeat($val, 1fr);
   }
+
+  @include media(grid-t-rows-#{$name}) {
+    grid-template-rows: repeat($val, 1fr);
+  }
 }
 
 @each $name, $val in $sizes {
   .grid-gap-#{$name} {
+    grid-gap: $val;
+  }
+
+  @include media(grid-gap-#{$name}) {
     grid-gap: $val;
   }
 }

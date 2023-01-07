@@ -2,9 +2,16 @@
   .bg-#{$name} {
     background-color: $val;
   }
+
+  @include media(bg-#{$name}) {
+    background-color: $val;
+  }
 }
 
-
 .bg-none {
+  background-color: transparent;
+}
+
+@include media(bg-none) {
   background-color: transparent;
 }

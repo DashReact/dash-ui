@@ -2,7 +2,15 @@
   display: flex;
 }
 
+@include media(flex) {
+  display: flex;
+}
+
 .items-center {
+  align-items: center;
+}
+
+@include media(items-center) {
   align-items: center;
 }
 
@@ -10,7 +18,15 @@
   align-items: flex-start;
 }
 
+@include media(items-start) {
+  align-items: flex-start;
+}
+
 .items-end {
+  align-items: flex-end;
+}
+
+@include media(items-end) {
   align-items: flex-end;
 }
 
@@ -18,7 +34,15 @@
   align-items: baseline;
 }
 
+@include media(items-baseline) {
+  align-items: baseline;
+}
+
 .items-stretch {
+  align-items: stretch;
+}
+
+@include media(items-stretch) {
   align-items: stretch;
 }
 
@@ -26,7 +50,15 @@
   align-self: flex-start;
 }
 
+@include media(self-start) {
+  align-self: flex-start;
+}
+
 .self-end {
+  align-self: flex-end;
+}
+
+@include media(self-end) {
   align-self: flex-end;
 }
 
@@ -34,7 +66,15 @@
   align-self: center;
 }
 
+@include media(self-center) {
+  align-self: center;
+}
+
 .self-baseline {
+  align-self: baseline;
+}
+
+@include media(self-baseline) {
   align-self: baseline;
 }
 
@@ -42,7 +82,15 @@
   align-self: stretch;
 }
 
+@include media(self-stretch) {
+  align-self: stretch;
+}
+
 .justify-start {
+  justify-content: flex-start;
+}
+
+@include media(justify-start) {
   justify-content: flex-start;
 }
 
@@ -50,7 +98,15 @@
   justify-content: flex-end;
 }
 
+@include media(justify-end) {
+  justify-content: flex-end;
+}
+
 .justify-between {
+  justify-content: space-between;
+}
+
+@include media(justify-between) {
   justify-content: space-between;
 }
 
@@ -58,7 +114,15 @@
   justify-content: space-around;
 }
 
+@include media(justify-around) {
+  justify-content: space-around;
+}
+
 .justify-evenly {
+  justify-content: space-evenly;
+}
+
+@include media(justify-evenly) {
   justify-content: space-evenly;
 }
 
@@ -66,8 +130,16 @@
   justify-content: center;
 }
 
+@include media(justify-center) {
+  justify-content: center;
+}
+
 @each $name, $val in $sizes {
   .gap-#{$name} {
+    gap: $val;
+  }
+
+  @include media(gap-#{$name}) {
     gap: $val;
   }
 }
@@ -76,7 +148,15 @@
   flex-direction: column;
 }
 
+@include media(flex-col) {
+  flex-direction: column;
+}
+
 .flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+@include media(flex-col-reverse) {
   flex-direction: column-reverse;
 }
 
@@ -84,7 +164,15 @@
   flex-direction: row;
 }
 
+@include media(flex-row) {
+  flex-direction: row;
+}
+
 .flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+@include media(flex-row-reverse) {
   flex-direction: row-reverse;
 }
 
@@ -92,7 +180,15 @@
   flex-wrap: wrap;
 }
 
+@include media(flex-wrap) {
+  flex-wrap: wrap;
+}
+
 .flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+@include media(flex-wrap-reverse) {
   flex-wrap: wrap-reverse;
 }
 
@@ -100,7 +196,15 @@
   flex-wrap: nowrap;
 }
 
+@include media(flex-nowrap) {
+  flex-wrap: nowrap;
+}
+
 .flex-1 {
+  flex: 1;
+}
+
+@include media(flex-1) {
   flex: 1;
 }
 
@@ -108,7 +212,15 @@
   flex: auto;
 }
 
+@include media(flex-auto) {
+  flex: auto;
+}
+
 .flex-initial {
+  flex: initial;
+}
+
+@include media(flex-initial) {
   flex: initial;
 }
 
@@ -116,7 +228,15 @@
   flex: none;
 }
 
+@include media(flex-none) {
+  flex: none;
+}
+
 .flex-grow-0 {
+  flex-grow: 0;
+}
+
+@include media(flex-grow-0) {
   flex-grow: 0;
 }
 
@@ -124,10 +244,22 @@
   flex-grow: 1;
 }
 
+@include media(flex-grow) {
+  flex-grow: 1;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
 
+@include media(flex-shrink-0) {
+  flex-shrink: 0;
+}
+
 .flex-shrink {
+  flex-shrink: 1;
+}
+
+@include media(flex-shrink) {
   flex-shrink: 1;
 }

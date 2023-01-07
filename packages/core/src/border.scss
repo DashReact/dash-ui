@@ -2,9 +2,17 @@
   .border-#{$name} {
     border-color: $val;
   }
+
+  @include media(border-#{$name}) {
+    border-color: $val;
+  }
 }
 @each $name, $val in $sizes {
   .border-#{$name} {
+    border-width: $val;
+  }
+
+  @include media(border-#{$name}) {
     border-width: $val;
   }
 }
@@ -13,7 +21,15 @@
   border-style: solid;
 }
 
+@include media(border-solid) {
+  border-style: solid;
+}
+
 .border-dashed {
+  border-style: dashed;
+}
+
+@include media(border-dashed) {
   border-style: dashed;
 }
 
@@ -21,10 +37,22 @@
   border-style: dotted;
 }
 
+@include media(border-dotted) {
+  border-style: dotted;
+}
+
 .border-double {
   border-style: double;
 }
 
+@include media(border-double) {
+  border-style: double;
+}
+
 .border-none {
+  border-style: none;
+}
+
+@include media(border-none) {
   border-style: none;
 }

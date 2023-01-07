@@ -2,7 +2,15 @@
   position: absolute;
 }
 
+@include media(absolute) {
+  position: absolute;
+}
+
 .relative {
+  position: relative;
+}
+
+@include media(relative) {
   position: relative;
 }
 
@@ -10,12 +18,24 @@
   position: fixed;
 }
 
+@include media(fixed) {
+  position: fixed;
+}
+
 .sticky {
+  position: sticky;
+}
+
+@include media(sticky) {
   position: sticky;
 }
 
 @each $name, $val in $sizes {
   .top-#{$name} {
+    top: $val;
+  }
+
+  @include media(top-#{$name}) {
     top: $val;
   }
 }
@@ -24,16 +44,28 @@
   .bottom-#{$name} {
     bottom: $val;
   }
+
+  @include media(bottom-#{$name}) {
+    bottom: $val;
+  }
 }
 
 @each $name, $val in $sizes {
   .left-#{$name} {
     left: $val;
   }
+
+  @include media(left-#{$name}) {
+    left: $val;
+  }
 }
 
 @each $name, $val in $sizes {
   .right-#{$name} {
+    right: $val;
+  }
+
+  @include media(right-#{$name}) {
     right: $val;
   }
 }

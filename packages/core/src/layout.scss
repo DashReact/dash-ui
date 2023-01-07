@@ -1,14 +1,27 @@
-
 .center {
-    margin: 0 auto;
+  margin: 0 auto;
+}
+
+@include media(center) {
+  margin: 0 auto;
 }
 
 .left {
-    margin: auto;
-    margin-left: 0;
+  margin: auto;
+  margin-left: 0;
+}
+
+@include media(left) {
+  margin: auto;
+  margin-left: 0;
 }
 
 .right {
-    margin: auto;
-    margin-right: 0;
+  margin: auto;
+  margin-right: 0;
+}
+
+@include media(right) {
+  margin: auto;
+  margin-right: 0;
 }

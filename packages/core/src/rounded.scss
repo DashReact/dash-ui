@@ -2,4 +2,8 @@
   .round-#{$name} {
     border-radius: $val;
   }
+
+  @include media(round-#{$name}) {
+    border-radius: $val;
+  }
 }

@@ -7,6 +7,17 @@
   animation: dash-rotation 1s linear infinite;
 }
 
+@include media(loader-1) {
+  .loader-1 {
+    border: 5px solid var(--dash-color-gray);
+    border-bottom-color: var(--dash-color-primary);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: dash-rotation 1s linear infinite;
+  }
+}
+
 .loader-2 {
   border: 5px solid var(--dash-color-gray);
   border-bottom-color: transparent;
@@ -14,6 +25,17 @@
   display: inline-block;
   box-sizing: border-box;
   animation: dash-rotation 1s linear infinite;
+}
+
+@include media(loader-2) {
+  .loader-2 {
+    border: 5px solid var(--dash-color-gray);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: dash-rotation 1s linear infinite;
+  }
 }
 
 .loader-3 {
@@ -39,14 +61,48 @@
   }
 }
 
+@include media(loader-3) {
+  .loader-3 {
+    display: inline-block;
+    position: relative;
+
+    &:after,
+    &:before {
+      content: '';
+      box-sizing: border-box;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      position: absolute;
+      left: 0;
+      top: 0;
+      animation: dash-animloader 2s linear infinite;
+    }
+
+    &:after {
+      animation-delay: 1s;
+    }
+  }
+}
+
 @each $name, $val in $colors {
   .loader-#{$name} {
     border-bottom-color: $val;
+  }
+
+  .loader-#{$name}-bg {
+    background-color: $val;
   }
 }
 
 @each $name, $val in $sizes {
   .loader-#{$name} {
+    width: $val;
+    height: $val;
+  }
+
+  .loader-#{$name}-bg {
     width: $val;
     height: $val;
   }

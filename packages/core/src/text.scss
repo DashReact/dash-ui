@@ -1,6 +1,9 @@
-
 @each $name, $val in $colors {
   .text-#{$name} {
+    color: $val;
+  }
+
+  @include media(text-#{$name}) {
     color: $val;
   }
 }
@@ -9,9 +12,17 @@
   .text-#{$name} {
     font-size: $val;
   }
+
+  @include media(text-#{$name}) {
+    font-size: $val;
+  }
 }
 
 .text-normal {
+  font-weight: var(--dash-font-weight-normal);
+}
+
+@include media(text-normal) {
   font-weight: var(--dash-font-weight-normal);
 }
 
@@ -19,7 +30,15 @@
   font-weight: var(--dash-font-weight-medium);
 }
 
+@include media(text-medium) {
+  font-weight: var(--dash-font-weight-medium);
+}
+
 .text-semibold {
+  font-weight: var(--dash-font-weight-semibold);
+}
+
+@include media(text-semibold) {
   font-weight: var(--dash-font-weight-semibold);
 }
 
@@ -27,7 +46,15 @@
   font-weight: var(--dash-font-weight-bold);
 }
 
+@include media(text-bold) {
+  font-weight: var(--dash-font-weight-bold);
+}
+
 .text-extrabold {
+  font-weight: var(--dash-font-weight-extrabold);
+}
+
+@include media(text-extrabold) {
   font-weight: var(--dash-font-weight-extrabold);
 }
 
@@ -35,7 +62,15 @@
   font-style: italic;
 }
 
+@include media(text-italic) {
+  font-style: italic;
+}
+
 .text-center {
+  text-align: center;
+}
+
+@include media(text-center) {
   text-align: center;
 }
 
@@ -43,7 +78,15 @@
   text-align: left;
 }
 
+@include media(text-left) {
+  text-align: left;
+}
+
 .text-right {
+  text-align: right;
+}
+
+@include media(text-right) {
   text-align: right;
 }
 
@@ -51,7 +94,15 @@
   text-align: justify;
 }
 
+@include media(text-justify) {
+  text-align: justify;
+}
+
 .underline {
+  text-decoration: underline;
+}
+
+@include media(underline) {
   text-decoration: underline;
 }
 
@@ -59,7 +110,15 @@
   text-decoration: line-through;
 }
 
+@include media(line-through) {
+  text-decoration: line-through;
+}
+
 .no-underline {
+  text-decoration: none;
+}
+
+@include media(no-underline) {
   text-decoration: none;
 }
 
@@ -67,7 +126,15 @@
   text-transform: capitalize;
 }
 
+@include media(capitalize) {
+  text-transform: capitalize;
+}
+
 .uppercase {
+  text-transform: uppercase;
+}
+
+@include media(uppercase) {
   text-transform: uppercase;
 }
 
@@ -75,7 +142,17 @@
   text-transform: lowercase;
 }
 
+@include media(lowercase) {
+  text-transform: lowercase;
+}
+
 .ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@include media(ellipsis) {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

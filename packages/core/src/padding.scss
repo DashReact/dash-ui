@@ -2,15 +2,27 @@
   .p-#{$name} {
     padding: $val;
   }
+
+  @include media(p-#{$name}) {
+    padding: $val;
+  }
 }
 
 @each $name, $val in $sizes {
   .pt-#{$name} {
     padding-top: $val;
   }
+
+  @include media(pt-#{$name}) {
+    padding-top: $val;
+  }
 }
 @each $name, $val in $sizes {
   .pr-#{$name} {
+    padding-right: $val;
+  }
+
+  @include media(pr-#{$name}) {
     padding-right: $val;
   }
 }
@@ -19,10 +31,18 @@
   .pb-#{$name} {
     padding-bottom: $val;
   }
+
+  @include media(pb-#{$name}) {
+    padding-bottom: $val;
+  }
 }
 
 @each $name, $val in $sizes {
   .pl-#{$name} {
+    padding-left: $val;
+  }
+
+  @include media(pl-#{$name}) {
     padding-left: $val;
   }
 }
@@ -32,9 +52,19 @@
     padding-left: $val;
     padding-right: $val;
   }
+
+  @include media(px-#{$name}) {
+    padding-left: $val;
+    padding-right: $val;
+  }
 }
 @each $name, $val in $sizes {
   .py-#{$name} {
+    padding-top: $val;
+    padding-bottom: $val;
+  }
+
+  @include media(py-#{$name}) {
     padding-top: $val;
     padding-bottom: $val;
   }

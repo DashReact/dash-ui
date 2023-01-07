@@ -29,18 +29,35 @@
   .btn-#{$name} {
     background-color: $val;
   }
+
+  @include media(btn-#{$name}) {
+    background-color: $val;
+  }
 }
-
-
 
 @each $name, $val in $sizes {
   .btn-round-#{$name} {
+    border-radius: $val;
+  }
+
+  @include media(btn-round-#{$name}) {
     border-radius: $val;
   }
 }
 
 @each $name, $val in $colors {
   .btn-outline-#{$name} {
+    background-color: transparent;
+    border: 1px solid $val;
+    color: $val;
+
+    &:hover {
+      background-color: $val;
+      color: var(--dash-color-white);
+    }
+  }
+
+  @include media(btn-outline-#{$name}) {
     background-color: transparent;
     border: 1px solid $val;
     color: $val;
@@ -63,6 +80,17 @@
       color: var(--dash-font-color);
     }
   }
+
+  @include media(btn-ghost-#{$name}) {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: $val;
+
+    &:hover {
+      background-color: $val;
+      color: var(--dash-font-color);
+    }
+  }
 }
 
 @each $name, $val in $colors {
@@ -75,54 +103,111 @@
       text-decoration: underline;
     }
   }
-}
 
+  @include media(btn-link-#{$name}) {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: $val;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
 
 .btn-disabled {
   opacity: 0.4;
+
+  &:hover {
+    cursor: not-allowed;
+  }
 }
 
-.btn-disabled:hover {
-  cursor: not-allowed;
+@include media(btn-disabled) {
+  opacity: 0.4;
+
+  &:hover {
+    cursor: not-allowed;
+  }
 }
 
 /* // Add spinner to button */
 .loading-left {
   opacity: 0.4;
-}
 
-.loading-left:hover {
-  cursor: not-allowed;
-}
+  &:hover {
+    cursor: not-allowed;
+  }
 
-.loading-left::before {
-  content: '';
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border: 0.2em solid currentColor;
-  border-right-color: transparent;
-  border-radius: 50%;
-  margin-right: 0.5em;
-  animation: dash-rotation 1s linear infinite;
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 0.2em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    animation: dash-rotation 1s linear infinite;
+  }
+
+  @include media(loading-left) {
+    opacity: 0.4;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      border: 0.2em solid currentColor;
+      border-right-color: transparent;
+      border-radius: 50%;
+      margin-right: 0.5em;
+      animation: dash-rotation 1s linear infinite;
+    }
+  }
 }
 
 .loading-right {
   opacity: 0.4;
-}
 
-.loading-right:hover {
-  cursor: not-allowed;
-}
+  &:hover {
+    cursor: not-allowed;
+  }
 
-.loading-right::after {
-  content: '';
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border: 0.2em solid currentColor;
-  border-right-color: transparent;
-  border-radius: 50%;
-  margin-right: 0.5em;
-  animation: dash-rotation 1s linear infinite;
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 0.2em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    animation: dash-rotation 1s linear infinite;
+  }
+
+  @include media(loading-right) {
+    opacity: 0.4;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      border: 0.2em solid currentColor;
+      border-right-color: transparent;
+      border-radius: 50%;
+      margin-right: 0.5em;
+      animation: dash-rotation 1s linear infinite;
+    }
+  }
 }

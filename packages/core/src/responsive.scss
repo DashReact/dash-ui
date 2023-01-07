@@ -1,22 +1,11 @@
-@media (min-width: var(--dash-breakpoint-sm)) {
-  /* Width */
 
-  /* Heigth */
 
-  /* Margin */
-
-  /* Padding */
-
-  /* Flex */
-
-  /* Grid */
-}
-
-@media (min-width: var(--dash-breakpoint-md)) {
-}
-
-@media (min-width: var(--dash-breakpoint-lg)) {
-}
-
-@media (min-width: var(--dash-breakpoint-xl)) {
+@mixin media($class) {
+  @each $name, $val in $breakpoints {
+    @media only screen and (min-width: $val) {
+      .#{$name}\:#{$class} {
+        @content;
+      }
+    }
+  }
 }

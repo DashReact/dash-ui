@@ -12,9 +12,33 @@ export function App() {
           Toggle theme
         </button>
       </div>
+      <div className={'m-md p-sm shadow-sm round-md overflow-auto'}>
+        <div className="pb-sm text-bold">Inputs</div> <br />
+        <div className="input-contain">
+          <input type="text" aria-labelledby="placeholder-fname" />
+          <label className="placeholder-text" id="placeholder-fname">
+            <div className="text">First Name</div>
+          </label>
+        </div>
+      </div>
       <div className={'m-md p-sm shadow-sm round-md'}>
         <div className="pb-sm text-bold">Buttons</div> <br />
         <div className={`flex items-center justify-start gap-sm flex-wrap`}>
+          <button className="btn btn-primary sm:w-full">
+            Button responsive sm
+          </button>
+          <button className="btn btn-primary md:w-full">
+            Button responsive md
+          </button>
+          <button className="btn btn-primary lg:w-full">
+            Button responsive lg
+          </button>
+          <button className="btn btn-primary xl:w-full">
+            Button responsive xl
+          </button>
+          <button className="btn btn-primary xxl:w-full">
+            Button responsive xxl
+          </button>
           <button className="btn btn-primary">Button</button>
           <button className="btn btn-secondary">Button</button>
           <button className="btn btn-white">Button</button>
@@ -105,10 +129,8 @@ export function App() {
           </button>
           <button className="btn btn-disabled">Button</button>
           <button className="btn btn-outline loading">Button</button>
+          <button className="btn btn-outline loading-left">Button</button>
           <button className="btn btn-outline loading-right">Button</button>
-          <button className="btn border-dashed border-red border-sm">
-            Button
-          </button>
         </div>
       </div>
       <div className={'m-md p-sm shadow-sm round-md'}>
@@ -192,7 +214,7 @@ export function App() {
       </div>
       <div className={'m-md p-sm shadow-sm round-md overflow-auto'}>
         <div className="pb-sm text-bold">Glass effect</div> <br />
-        <div className="p-sm round-md p-md h-6xl w-6xl overflow-y-auto glass">
+        <div className="p-sm round-md p-md h-6xl w-6xl overflow-y-auto glass md:w-1/2 md:m-auto">
           Glass
         </div>
       </div>
@@ -218,7 +240,6 @@ export function App() {
         <div className="loader-1 loader-2xl loader-indigo"></div>
         <div className="loader-1 loader-2xl loader-purple"></div>
         <div className="loader-1 loader-2xl loader-pink"></div>
-        
         <div className="pb-sm text-bold">Loaders variants</div> <br />
         <div className="loader-1 loader-2xl"></div>
         <div className="loader-2 loader-2xl"></div>

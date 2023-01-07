@@ -2,7 +2,15 @@
   cursor: pointer;
 }
 
+@include media(cursor-pointer) {
+  cursor: pointer;
+}
+
 .cursor-auto {
+  cursor: auto;
+}
+
+@include media(cursor-auto) {
   cursor: auto;
 }
 
@@ -10,7 +18,15 @@
   cursor: default;
 }
 
+@include media(cursor-default) {
+  cursor: default;
+}
+
 .cursor-none {
+  cursor: none;
+}
+
+@include media(cursor-none) {
   cursor: none;
 }
 
@@ -18,7 +34,15 @@
   cursor: wait;
 }
 
+@include media(cursor-wait) {
+  cursor: wait;
+}
+
 .cursor-text {
+  cursor: text;
+}
+
+@include media(cursor-text) {
   cursor: text;
 }
 
@@ -26,7 +50,15 @@
   cursor: move;
 }
 
+@include media(cursor-move) {
+  cursor: move;
+}
+
 .cursor-help {
+  cursor: help;
+}
+
+@include media(cursor-help) {
   cursor: help;
 }
 
@@ -34,7 +66,15 @@
   cursor: not-allowed;
 }
 
+@include media(cursor-not-allowed) {
+  cursor: not-allowed;
+}
+
 .cursor-grab {
+  cursor: grab;
+}
+
+@include media(cursor-grab) {
   cursor: grab;
 }
 
@@ -42,7 +82,15 @@
   cursor: grabbing;
 }
 
+@include media(cursor-grabbing) {
+  cursor: grabbing;
+}
+
 .cursor-all-scroll {
+  cursor: all-scroll;
+}
+
+@include media(cursor-all-scroll) {
   cursor: all-scroll;
 }
 
@@ -50,7 +98,15 @@
   cursor: col-resize;
 }
 
+@include media(cursor-col-resize) {
+  cursor: col-resize;
+}
+
 .cursor-row-resize {
+  cursor: row-resize;
+}
+
+@include media(cursor-row-resize) {
   cursor: row-resize;
 }
 
@@ -58,7 +114,15 @@
   cursor: n-resize;
 }
 
+@include media(cursor-n-resize) {
+  cursor: n-resize;
+}
+
 .cursor-e-resize {
+  cursor: e-resize;
+}
+
+@include media(cursor-e-resize) {
   cursor: e-resize;
 }
 
@@ -66,7 +130,15 @@
   cursor: s-resize;
 }
 
+@include media(cursor-s-resize) {
+  cursor: s-resize;
+}
+
 .cursor-w-resize {
+  cursor: w-resize;
+}
+
+@include media(cursor-w-resize) {
   cursor: w-resize;
 }
 
@@ -74,7 +146,15 @@
   cursor: ne-resize;
 }
 
+@include media(cursor-ne-resize) {
+  cursor: ne-resize;
+}
+
 .cursor-nw-resize {
+  cursor: nw-resize;
+}
+
+@include media(cursor-nw-resize) {
   cursor: nw-resize;
 }
 
@@ -82,7 +162,15 @@
   cursor: se-resize;
 }
 
+@include media(cursor-se-resize) {
+  cursor: se-resize;
+}
+
 .cursor-sw-resize {
+  cursor: sw-resize;
+}
+
+@include media(cursor-sw-resize) {
   cursor: sw-resize;
 }
 
@@ -90,7 +178,15 @@
   cursor: ew-resize;
 }
 
+@include media(cursor-ew-resize) {
+  cursor: ew-resize;
+}
+
 .cursor-ns-resize {
+  cursor: ns-resize;
+}
+
+@include media(cursor-ns-resize) {
   cursor: ns-resize;
 }
 
@@ -98,7 +194,15 @@
   cursor: nesw-resize;
 }
 
+@include media(cursor-nesw-resize) {
+  cursor: nesw-resize;
+}
+
 .cursor-nwse-resize {
+  cursor: nwse-resize;
+}
+
+@include media(cursor-nwse-resize) {
   cursor: nwse-resize;
 }
 
@@ -106,7 +210,15 @@
   cursor: zoom-in;
 }
 
+@include media(cursor-zoom-in) {
+  cursor: zoom-in;
+}
+
 .cursor-zoom-out {
+  cursor: zoom-out;
+}
+
+@include media(cursor-zoom-out) {
   cursor: zoom-out;
 }
 
@@ -114,8 +226,14 @@
   pointer-events: none;
 }
 
+@include media(cursor-pointer-events-none) {
+  pointer-events: none;
+}
+
 .cursor-pointer-events-auto {
   pointer-events: auto;
 }
 
-
+@include media(cursor-pointer-events-auto) {
+  pointer-events: auto;
+}

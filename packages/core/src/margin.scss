@@ -2,8 +2,16 @@
   margin: auto;
 }
 
+@include media(m-auto) {
+  margin: auto;
+}
+
 @each $name, $val in $sizes {
   .m-#{$name} {
+    margin: $val;
+  }
+
+  @include media(m-#{$name}) {
     margin: $val;
   }
 }
@@ -12,10 +20,18 @@
   .mt-#{$name} {
     margin-top: $val;
   }
+
+  @include media(mt-#{$name}) {
+    margin-top: $val;
+  }
 }
 
 @each $name, $val in $sizes {
   .mr-#{$name} {
+    margin-right: $val;
+  }
+
+  @include media(mr-#{$name}) {
     margin-right: $val;
   }
 }
@@ -23,10 +39,18 @@
   .mb-#{$name} {
     margin-bottom: $val;
   }
+
+  @include media(mb-#{$name}) {
+    margin-bottom: $val;
+  }
 }
 
 @each $name, $val in $sizes {
   .ml-#{$name} {
+    margin-left: $val;
+  }
+
+  @include media(ml-#{$name}) {
     margin-left: $val;
   }
 }
@@ -36,10 +60,20 @@
     margin-left: $val;
     margin-right: $val;
   }
+
+  @include media(mx-#{$name}) {
+    margin-left: $val;
+    margin-right: $val;
+  }
 }
 
 @each $name, $val in $sizes {
   .my-#{$name} {
+    margin-left: $val;
+    margin-bottom: $val;
+  }
+
+  @include media(my-#{$name}) {
     margin-left: $val;
     margin-bottom: $val;
   }

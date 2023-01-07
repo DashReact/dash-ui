@@ -2,7 +2,16 @@
   overflow: hidden;
 }
 
+@include media(overflow-hidden) {
+  overflow: hidden;
+}
+
 .hoverflow-auto {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+@include media(hoverflow-auto) {
   overflow-x: auto;
   overflow-y: auto;
 }
@@ -11,6 +20,14 @@
   overflow-x: auto;
 }
 
+@include media(hoverflow-x-auto) {
+  overflow-x: auto;
+}
+
 .hoverflow-y-auto {
+  overflow-y: auto;
+}
+
+@include media(hoverflow-y-auto) {
   overflow-y: auto;
 }
