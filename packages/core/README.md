@@ -1,7 +1,5 @@
 # @dash-ui-lib/core
 
+Core styles for the dash-ui-lib component library
 
 
-## Running unit tests
-
-Run `nx test core` to execute the unit tests via [Vitest](https://vitest.dev/).

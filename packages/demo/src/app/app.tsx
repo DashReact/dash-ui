@@ -127,6 +127,7 @@ export function App() {
             </svg>
             Button
           </button>
+
           <button className="btn btn-disabled">Button</button>
           <button className="btn btn-outline loading">Button</button>
           <button className="btn btn-outline loading-left">Button</button>

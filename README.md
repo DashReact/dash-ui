@@ -4,8 +4,6 @@
 
 ![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/icon.png?raw=true)
 
-<!-- <div style="display: flex; gap: 1em;"> -->
-
 <img style="float: right;" title="SASS" src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white">
 
 <img style="float: right;" title="Typescript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
@@ -15,11 +13,6 @@
 <img style="float: right;" title="Chakra" src="https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white">
 
 <img style="float: right;" title="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-
-<img style="float: right;" title="React Native" src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-
-<!-- </div> -->
-
 
 ## Demo components
 
@@ -43,18 +36,22 @@
 
 ![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/demo/glass-loaders.png?raw=true)
 
-## Libraries
-
-This section contains all the comands related to libraries manipulation in the workspace.
-
 ##### Generating apps
 
 nx g @nrwl/react:app {app-name}
 
+##### Run app
+
+nx serve {app-name}
+
+## Libraries
+
+This section contains all the comands related to libraries manipulation in the workspace.
+
 ##### Generating Libraries
 
 ```bash
-nx g @nrwl/react:library {lib-name} --publishable --importPath="@dash-ui-lib/{lib-name}" --tags="components,ts,dash-ui,react,react-native,js"
+nx g @nrwl/react:library {lib-name} --publishable --importPath="@dash-ui-lib/{lib-name}" --tags="components,ts,dash-ui,react,react-native,js,sass"
 ```
 
 ##### Creating Components

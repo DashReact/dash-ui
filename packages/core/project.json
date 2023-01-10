@@ -2,7 +2,7 @@
   "name": "core",
   "sourceRoot": "packages/core/src",
   "projectType": "library",
-  "tags": ["components", "ts", "dash-ui", "react", "react-native", "js"],
+  "tags": ["components", "ts", "dash-ui", "react", "js", "sass"],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
