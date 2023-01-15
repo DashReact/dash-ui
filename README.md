@@ -1,4 +1,4 @@
-# Dash UI Lib (alpha)
+# Dash UI Lib
 
 #### Components library for build modern web applications :metal: inspired in [Tailwindcss](https://tailwindcss.com/) and [Chakra ui](https://chakra-ui.com/)
 
