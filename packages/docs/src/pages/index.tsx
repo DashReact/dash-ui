@@ -1,11 +1,11 @@
-import React from 'react';
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import React from 'react';
 import styles from './index.module.css';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import '../../../core/src';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -46,9 +46,9 @@ function HomepageHeader() {
             <svg
               stroke="currentColor"
               fill="white"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 448 512"
-              font-size="0.8em"
+              fontSize="0.8em"
               aria-hidden="true"
               focusable="false"
               height="1em"

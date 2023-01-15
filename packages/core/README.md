@@ -6,4 +6,4 @@ Core styles for the dash-ui-lib component library
 
 ### Documentation
 
-See the documentation at [Github](https://github.com/DashReact/dash-ui)
+See the documentation at [Website Docs](https://dash-ui-dashreact.vercel.app/)

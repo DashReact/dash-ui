@@ -10,6 +10,10 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --github-link-color: #000;
+
+  // search
+  --search-local-modal-background: var(--dash-bg-color);
+  --search-local-highlight-color: var(--dash-primary-color);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -24,8 +28,9 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --github-link-color: #fff;
 }
-
-@import '../../../../dist/packages/core/index.css';
+/* 
+@import '../../../../dist/packages/core/index.css'; */
+/* @import '../../../core/src/styles.scss'; */
 
 .github-link:hover {
   opacity: 0.6;
@@ -51,18 +56,20 @@
   color: var(--dash-font-color);
 }
 
-.navbar {
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  /* backdrop-filter: blur(5px); */
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
+@media screen and (min-width: 997px) {
+  .navbar {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
 
-.navbar:hover {
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(10px);
+  .navbar:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+  }
 }
 
 .navbar__title {

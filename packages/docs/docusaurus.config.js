@@ -33,7 +33,7 @@ const config = {
           editUrl: 'https://github.com/DashReact/dash-ui',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.scss'),
         },
       }),
     ],
@@ -100,13 +100,15 @@ const config = {
     }),
   plugins: [
     [
-      require.resolve('@cmfcmf/docusaurus-search-local'),
+      require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         indexPages: true,
-        language: ['en'],
-
+        hashed: true,
+        language: ['en', 'es', 'fr', 'pt', 'zh'],
       },
+      
     ],
+    'docusaurus-plugin-sass',
   ],
 };
 
