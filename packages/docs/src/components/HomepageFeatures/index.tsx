@@ -53,8 +53,8 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({ title, Svg, description }: FeatureItem) {
   return (
-    <div className="col col--4 p-md">
-      <div className="round-md p-md feat-card glass">
+    <div className="col col--4">
+      <div className="round-md  feat-card ">
         <div className="text--center">
           <Svg className="w-3xl h-3xl" role="img" />
         </div>
@@ -69,7 +69,7 @@ function Feature({ title, Svg, description }: FeatureItem) {
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section className="features mt-xl m-md">
+    <section className="features mt-xl">
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (
