@@ -1,0 +1,40 @@
+@mixin media($class) {
+  @each $name, $val in $breakpoints {
+    @media only screen and (min-width: $val) {
+      .#{$name}\:#{$class} {
+        @content;
+      }
+      .#{$name}\:hover\:#{$class}:hover {
+        @content;
+      }
+
+      .#{$name}\:focus\:#{$class}:focus {
+        @content;
+      }
+
+      .#{$name}\:active\:#{$class}:active {
+        @content;
+      }
+
+      .#{$name}\:visited\:#{$class}:visited {
+        @content;
+      }
+    }
+
+    .hover\:#{$class}:hover {
+      @content;
+    }
+
+    .focus\:#{$class}:focus {
+      @content;
+    }
+
+    .active\:#{$class}:active {
+      @content;
+    }
+
+    .visited\:#{$class}:visited {
+      @content;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Dash UI Lib (alpha)
 
-#### Components library for build modern web applications inspired in [Tailwindcss](https://tailwindcss.com/) and [Chakra ui](https://chakra-ui.com/)
+#### Components library for build modern web applications :metal: inspired in [Tailwindcss](https://tailwindcss.com/) and [Chakra ui](https://chakra-ui.com/)
 
 ![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/icon.png?raw=true)
 
@@ -112,12 +112,6 @@ cd /dist/libs/{lib-name}
 
 ```bash
 npm publish --access public
-```
-
-#### Publishing libraries
-
-```bash
-nx deploy {lib-name} --dry-run
 ```
 
 #### Running app

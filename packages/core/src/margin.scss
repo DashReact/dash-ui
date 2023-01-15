@@ -69,12 +69,12 @@
 
 @each $name, $val in $sizes {
   .my-#{$name} {
-    margin-left: $val;
+    margin-top: $val;
     margin-bottom: $val;
   }
 
   @include media(my-#{$name}) {
-    margin-left: $val;
+    margin-top: $val;
     margin-bottom: $val;
   }
 }

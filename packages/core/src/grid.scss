@@ -22,11 +22,11 @@
 
 @each $name, $val in $numbers {
   .grid-row-#{$name} {
-    grid-column: span $val;
+    grid-row: span $val;
   }
 
   @include media(grid-row-#{$name}) {
-    grid-column: span $val;
+    grid-row: span $val;
   }
 }
 

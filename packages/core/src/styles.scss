@@ -1,6 +1,6 @@
 // Variables
 @import "./variables.scss";
-@import './responsive.scss';
+@import './media.scss';
 
 /* Components */
 @import './button.scss';
@@ -31,8 +31,7 @@
 @import './themes';
 
 html,
-body,
-div {
+body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.5;

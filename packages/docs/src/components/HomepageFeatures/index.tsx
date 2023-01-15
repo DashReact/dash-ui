@@ -1,6 +1,5 @@
 import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
+import './styles.css';
 
 type FeatureItem = {
   title: string;
@@ -11,45 +10,58 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/features/easy.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Start using the library in the fastest possible way without
+        configurations.
       </>
     ),
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/features/focus.svg').default,
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
+      <>Save hundreds of development hours and focus on your product</>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Run everywhere',
+    Svg: require('@site/static/img/features/everywhere.svg').default,
     description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
+      <>React, React Native, Angular, Vue, JS, TS, etc... we have it all</>
     ),
+  },
+  {
+    title: 'Fast and powerful',
+    Svg: require('@site/static/img/features/powerful.svg').default,
+    description: (
+      <>We focus on improving your application by doing more with less code</>
+    ),
+  },
+  {
+    title: 'Themeable',
+    Svg: require('@site/static/img/features/themeable.svg').default,
+    description: <>Create as many themes as you want in an easy and fast way</>,
+  },
+  {
+    title: 'Powered by Typescript and SASS',
+    Svg: require('@site/static/img/features/powered.svg').default,
+    description: <>Components for all needs</>,
   },
 ];
 
 function Feature({ title, Svg, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
+    <div className="col col--4 p-md">
+      <div className="round-md p-md feat-card glass">
+        <div className="text--center">
+          <Svg className="w-3xl h-3xl" role="img" />
+        </div>
+        <div className="text--center padding-horiz--md">
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
       </div>
     </div>
   );
@@ -57,7 +69,7 @@ function Feature({ title, Svg, description }: FeatureItem) {
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section className={styles.features}>
+    <section className="features mt-xl m-md">
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (

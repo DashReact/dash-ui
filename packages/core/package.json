@@ -1,8 +1,26 @@
 {
   "name": "@dash-ui-lib/core",
-  "version": "0.0.1",
+  "description": "Core components for the @dash-ui-library",
+  "author": "Pablo Aballe",
+  "version": "0.0.2-beta",
+  "keywords": [
+    "dash-ui",
+    "dash-ui-lib",
+    "components",
+    "react",
+    "react-components",
+    "react-component-library",
+    "tailwindcss",
+    "tailwind",
+    "sass",
+    "css",
+    "css-in-js",
+    "css-in-javascript",
+    "typescript"
+  ],
   "main": "./index.js",
   "types": "./index.d.ts",
+  "license": "MIT",
   "exports": {
     ".": {
       "import": "./index.mjs",

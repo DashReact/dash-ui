@@ -77,5 +77,6 @@
         "linter": "eslint"
       }
     }
-  }
+  },
+  "defaultProject": "next"
 }

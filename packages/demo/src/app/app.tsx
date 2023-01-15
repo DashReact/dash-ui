@@ -6,7 +6,7 @@ export function App() {
       <div className={'m-md p-sm shadow-sm round-md overflow-auto'}>
         <div className="pb-sm text-bold">Change theme</div> <br />
         <button
-          className="btn btn-primary"
+          className="btn btn-primary hover:bg-green"
           onClick={() => changeTheme(getTheme() === 'dark' ? 'light' : 'dark')}
         >
           Toggle theme
@@ -136,7 +136,7 @@ export function App() {
       </div>
       <div className={'m-md p-sm shadow-sm round-md'}>
         <div className="pb-sm text-bold center">Layouts</div> <br />
-        <div className="p-sm round-md p-md w-2xl h-xl left bg-primary">
+        <div className="p-sm round-md p-md w-2xl h-xl left bg-primary hover:bg-red">
           left
         </div>
         <div className="p-sm round-md p-md w-2xl h-xl center bg-primary">

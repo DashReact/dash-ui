@@ -1,0 +1,34 @@
+---
+sidebar_position: 3
+---
+
+# Create your how theme
+
+To create your theme you have to define within the data-theme element the modifications you want to make to the main theme as shown below:
+
+```css
+[data-theme='dark'] {
+  --dash-font-color: #e1e1ff;
+  --dash-bg-color: #252525;
+}
+```
+
+## Get the current theme
+
+To get the current theme you can do it using the following function
+
+```ts
+import { getTheme } from '@dash-ui-lib/core';
+
+const theme = getTheme();
+```
+
+## Change the theme
+
+To change the current theme you can do it using the following function
+
+```ts
+import { changeTheme } from '@dash-ui-lib/core';
+
+const theme = changeTheme('your-theme-name');
+```
