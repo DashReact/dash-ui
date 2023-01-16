@@ -1,6 +1,6 @@
-# Dash UI Lib
-
 #### Components library for build modern web applications :metal: inspired in [Tailwindcss](https://tailwindcss.com/) and [Chakra ui](https://chakra-ui.com/)
+
+Documentation at: [Docs](https://dash-ui-dashreact.vercel.app/)
 
 ![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/icon.png?raw=true)
 

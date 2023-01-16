@@ -1,4 +1,7 @@
-import { changeTheme, getTheme } from '@dash-ui-lib/core';
+// import { changeTheme, getTheme } from '@dash-ui-lib/core';
+// import '@dash-ui-lib/core';
+
+import '../../../../dist/packages/core/index.css';
 
 export function App() {
   return (
