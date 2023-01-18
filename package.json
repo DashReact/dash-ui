@@ -63,6 +63,7 @@
     "autoprefixer": "10.4.13",
     "babel-jest": "28.1.1",
     "babel-loader": "8.1.0",
+    "babel-preset-minify": "^0.5.2",
     "cypress": "^11.0.0",
     "eslint": "~8.15.0",
     "eslint-config-next": "13.0.0",

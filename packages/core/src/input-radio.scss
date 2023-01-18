@@ -1,0 +1,28 @@
+input[type='radio'] {
+  width: 1.5em;
+  height: 1.5em;
+  accent-color: var(--dash-color-primary);
+  border-radius: 50%;
+  vertical-align: middle;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid var(--dash-color-primary);
+  cursor: pointer;
+
+  ::before {
+    content: '';
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  }
+}
+
+input[type='radio']:checked {
+  background-color: var(--dash-color-primary);
+}
+
+input[type='radio']:hover {
+  filter: brightness(1.5);
+  accent-color: var(--dash-color-primary);
+}

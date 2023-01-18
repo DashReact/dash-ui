@@ -13,7 +13,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/icon.png',
+  favicon: 'img/icon-no-bg.png',
   organizationName: 'Dash UI',
   projectName: 'Dash UI docs',
 
@@ -46,14 +46,48 @@ const config = {
         title: 'Dash UI',
         logo: {
           alt: 'Dash UI',
-          src: 'img/icon.png',
+          src: 'img/icon-no-bg.png',
         },
         items: [
           {
-            type: 'doc',
+            type: 'dropdown',
             docId: 'intro',
             position: 'left',
             label: 'Documentation',
+            items: [
+              {
+                label: 'Getting Started',
+                to: '/docs/intro',
+              },
+              {
+                label: 'Theming',
+                to: '/docs/theming',
+              },
+              {
+                label: 'Base styles',
+                to: '/docs/base-styles',
+              },
+              {
+                label: 'Components',
+                to: '/docs/components',
+              },
+              {
+                label: 'Icons',
+                to: '/docs/icons',
+              },
+            ]
+          },
+          {
+            type: 'doc',
+            docId: 'installation/react',
+            label: 'React',
+            position: 'left',
+          },
+          {
+            type: 'doc',
+            docId: 'installation/nextjs',
+            label: 'Next',
+            position: 'left',
           },
           // { to: '/blog', label: 'Blog', position: 'left' },
           {

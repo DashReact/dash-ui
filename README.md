@@ -1,18 +1,12 @@
-#### Components library for build modern web applications :metal: inspired in [Tailwindcss](https://tailwindcss.com/) and [Chakra ui](https://chakra-ui.com/)
+## Components library for build modern web applications :metal: inspired in [Tailwindcss](https://tailwindcss.com/)
 
-Documentation at: [Docs](https://dash-ui-dashreact.vercel.app/)
+Documentation at: [Website](https://dash-ui-dashreact.vercel.app/)
 
 ![Dash UI](https://github.com/DashReact/dash-ui/blob/main/media/icon.png?raw=true)
 
-<img style="float: right;" title="SASS" src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white">
-
-<img style="float: right;" title="Typescript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
-
-<img style="float: right;" title="TailwindCSS" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white">
-
-<img style="float: right;" title="Chakra" src="https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white">
-
-<img style="float: right;" title="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+![npm version](https://badge.fury.io/js/@dash-ui-lib%2Fcore.svg)
+![Total downloads](https://badgen.net/npm/dt/@dash-ui-lib/core)
+![Types](https://badgen.net/npm/types/tslib)
 
 ## Demo components
 

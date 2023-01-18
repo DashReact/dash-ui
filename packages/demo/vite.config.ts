@@ -8,6 +8,9 @@ export default defineConfig({
     port: 4200,
     host: 'localhost',
   },
+  build: {
+    minify: true
+  },
   plugins: [
     react(),
     tsconfigPaths({

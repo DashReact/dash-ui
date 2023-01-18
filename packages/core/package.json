@@ -2,7 +2,8 @@
   "name": "@dash-ui-lib/core",
   "description": "Core components for the @dash-ui-library",
   "author": "Pablo Aballe",
-  "version": "0.0.3-beta",
+  "type": "module",
+  "version": "0.0.1",
   "keywords": [
     "dash-ui",
     "dash-ui-lib",

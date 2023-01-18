@@ -1,12 +1,3 @@
-@each $name, $val in $sizes {
-  .h-#{$name} {
-    height: $val;
-  }
-
-  @include media(h-#{$name}) {
-    height: $val;
-  }
-}
 
 .h-1\/2 {
   height: 50%;
@@ -145,5 +136,15 @@
 
   @include media(min-h-#{$name}) {
     min-height: $val;
+  }
+}
+
+@each $name, $val in $sizes {
+  .h-#{$name} {
+    height: $val;
+  }
+
+  @include media(h-#{$name}) {
+    height: $val;
   }
 }

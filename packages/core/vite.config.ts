@@ -7,11 +7,16 @@ export default defineConfig({
     port: 4200,
     host: 'localhost',
   },
+  build: {
+    minify:{
+      type: 'esbuild',
+    }
+  },
   plugins: [
     tsconfigPaths({
       root: '../../',
       projects: ['tsconfig.base.json'],
-    }),
+    })
   ],
   test: {
     globals: true,

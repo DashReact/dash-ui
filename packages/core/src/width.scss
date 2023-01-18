@@ -1,12 +1,3 @@
-@each $name, $val in $sizes {
-  .w-#{$name} {
-    width: $val;
-  }
-
-  @include media(w-#{$name}) {
-    width: $val;
-  }
-}
 
 .w-1\/2 {
   width: 50%;
@@ -128,6 +119,8 @@
   width: 91.666667%;
 }
 
+
+
 @each $name, $val in $sizes {
   .max-w-#{$name} {
     max-width: $val;
@@ -170,4 +163,15 @@
 
 @include media(w-0) {
   width: 0;
+}
+
+
+@each $name, $val in $sizes {
+  .w-#{$name} {
+    width: $val;
+  }
+
+  @include media(w-#{$name}) {
+    width: $val;
+  }
 }

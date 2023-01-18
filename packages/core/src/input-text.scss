@@ -1,0 +1,17 @@
+input[type='text'] {
+  accent-color: var(--dash-color-primary);
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.25em;
+  cursor: pointer;
+  padding: 0.5em 0.7em;
+  border-radius: 0.5em;
+  font-size: 1em;
+}
+
+input[type=text]:focus {
+  border: 2px solid var(--dash-color-primary);
+}
+
+input[type='text']:hover {
+  filter: brightness(1.5);
+}

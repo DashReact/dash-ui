@@ -1,7 +1,5 @@
-// import { changeTheme, getTheme } from '@dash-ui-lib/core';
+import { changeTheme, getTheme } from '@dash-ui-lib/core';
 // import '@dash-ui-lib/core';
-
-import '../../../../dist/packages/core/index.css';
 
 export function App() {
   return (
@@ -17,11 +15,26 @@ export function App() {
       </div>
       <div className={'m-md p-sm shadow-sm round-md overflow-auto'}>
         <div className="pb-sm text-bold">Inputs</div> <br />
-        <div className="input-contain">
+        {/* <div className="input-contain">
           <input type="text" aria-labelledby="placeholder-fname" />
           <label className="placeholder-text" id="placeholder-fname">
             <div className="text">First Name</div>
           </label>
+        </div> */}
+        <div className='flex items-center gap-md flex-wrap'>
+
+        <input type="checkbox" />
+        <input type="radio" name="test-radio" value="0"/>
+        <input type="radio" name="test-radio" value="1"/>
+        <input type="radio" name="test-radio" value="2"/>
+        <input type="text" />
+        <input type="text" placeholder="Placeholder" />
+        <input type="text" value="Value" />
+        <input type="text" disabled />
+        <input type="text" readOnly />
+        <input type="text" required />
+        <input type="text" aria-invalid="true" />
+        <textarea  type="textarea" ></textarea>
         </div>
       </div>
       <div className={'m-md p-sm shadow-sm round-md'}>

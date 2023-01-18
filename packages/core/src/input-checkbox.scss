@@ -1,0 +1,35 @@
+input[type='checkbox'] {
+    width: 1.5em;
+    height: 1.5em;
+    accent-color: var(--dash-color-primary);
+    transition: all 0.2s ease-in-out;
+    border-radius: 0.25em;
+    vertical-align: middle;
+    border: 1px solid var(--dash-color-primary);;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type='checkbox']:checked {
+    background-color: var(--dash-color-primary);;
+}
+
+input[type='checkbox']:hover {
+   filter: brightness(1.5);
+}
+
+// Add a checkmark to the checkbox
+input[type='checkbox']:checked::before {
+    content: '✔';
+    font-size: 1.5em;
+    // Align the checkmark with the center of the checkbox
+    position: relative;
+    top: -0.25em;
+    left: 0.1em;
+
+    display: inline-block;
+    color: var(--dash-font-color);
+    padding: 0 6px 0 0;
+}
