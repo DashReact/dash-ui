@@ -20,7 +20,7 @@
         "project": "packages/core/package.json",
         "entryFile": "packages/core/src/index.ts",
         "external": ["react/jsx-runtime"],
-        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "rollupConfig": "./packages/core/rollup.config.js",
         "compiler": "babel",
         "assets": [
           {
@@ -29,13 +29,6 @@
             "output": "."
           }
         ]
-      }
-    },
-    "test": {
-      "executor": "@nrwl/vite:test",
-      "outputs": ["{projectRoot}/coverage"],
-      "options": {
-        "passWithNoTests": true
       }
     }
   }

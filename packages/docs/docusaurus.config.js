@@ -75,7 +75,7 @@ const config = {
                 label: 'Icons',
                 to: '/docs/icons',
               },
-            ]
+            ],
           },
           {
             type: 'doc',
@@ -134,15 +134,21 @@ const config = {
     }),
   plugins: [
     [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
+      require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         indexPages: true,
         hashed: true,
         language: ['en', 'es', 'fr', 'pt', 'zh'],
       },
-      
     ],
     'docusaurus-plugin-sass',
+    [
+      '@docusaurus/plugin-google-analytics',
+      {
+        trackingID: 'G-91N7LLJ21W',
+        anonymizeIP: true,
+      },
+    ],
   ],
 };
 
