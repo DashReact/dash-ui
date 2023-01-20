@@ -142,13 +142,6 @@ const config = {
       },
     ],
     'docusaurus-plugin-sass',
-    [
-      '@docusaurus/plugin-google-analytics',
-      {
-        trackingID: 'G-91N7LLJ21W',
-        anonymizeIP: true,
-      },
-    ],
   ],
 };
 

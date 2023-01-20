@@ -22,7 +22,6 @@
   /* color: var(--dash-color-white);  */
   background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 800 800' opacity='0.93' %3E%3Cdefs%3E%3Cfilter id='bbblurry-filter' x='-100%25' y='-100%25' width='400%25' height='400%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' %3E%3CfeGaussianBlur stdDeviation='69' x='0%25' y='0%25' width='100%25' height='100%25' in='SourceGraphic' edgeMode='none' result='blur' %3E%3C/feGaussianBlur%3E%3C/filter%3E%3C/defs%3E%3Cg filter='url(%23bbblurry-filter)'%3E%3Cellipse rx='214.5' ry='220' cx='375.88914709690357' cy='462.4901340931499' fill='hsl(240, 74%25, 61%25)' %3E%3C/ellipse%3E%3Cellipse rx='214.5' ry='220' cx='451.1651611328125' cy='483.9083251953125' fill='hsl(348, 77%25, 57%25)' %3E%3C/ellipse%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: left;
   background-size: 34em;
 
   cursor: pointer;

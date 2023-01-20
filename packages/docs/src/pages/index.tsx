@@ -3,7 +3,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import React from 'react';
-import styles from './index.module.css';
+import './index.scss';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import '../../../core/src';
 
@@ -11,7 +11,7 @@ function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero _hero--primary gradient-bg')}>
-      <div className="md:w-1/3 p-md   ">
+      <div className="md:w-1/3 dash-main-text">
         <h1 className={clsx('hero__title text-white site-title')}>
           {siteConfig.title}
         </h1>
@@ -19,7 +19,7 @@ function HomepageHeader() {
           The way of build moder applications
         </h3>
         <p className="hero__subtitle text-gray text-md">{siteConfig.tagline}</p>
-        <div className="flex items-centet gap-md mb-md flex-wrap gap-md">
+        <div className="flex justify-center gap-md mb-md flex-wrap gap-md">
           {/* <img className='w-xxl' src="https://img.shields.io/npm/v/@dash-ui-lib/core?style=for-the-badge.png" alt="npm version" /> */}
           <img
             className="w-xl round-sm"
@@ -42,9 +42,9 @@ function HomepageHeader() {
             alt="npm version"
           />
         </div>
-        <div className={styles.buttons}>
+        <div className={"buttons"}>
           <Link
-            className="btn bg-black rounded-xl glass w-full"
+            className="btn bg-black rounded-xl glass lg:w-1/2 lg:m-auto"
             to="/docs/installation/getting-started"
           >
             Get Started
